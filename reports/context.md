@@ -18,3 +18,9 @@ Append one section per issue below. Don't rewrite or delete prior entries. Keep 
 - Dataset facts in the plan (Amazon purchases + demographics) are from memory, unverified until the data audit.
 - No `latexmk` locally; compile with `tectonic <file>.tex` from `reports/`.
 - Planned phase issues: setup, data audit (go/no-go), design, analysis, robustness, reporting.
+
+## Issue #3 — Setup, data download, packages (2026-10-04)
+- Data: Open e-commerce 1.0 (CC0) in `code/build/input/public/open_ecommerce/` (gitignored); re-fetch with `code/scripts/download_open_ecommerce.py`. Dataverse needs a User-Agent; `survey.csv` must be fetched with `?format=original` (listed md5 is the original's).
+- Facts: 1.85M purchase rows, 5,027 users, 2018-01 to 2024-08; columns are date, price, qty, state, title, ASIN, category, respondent ID. Survey has demographics but NO running/exercise items, so the proxy can't be validated in-data.
+- Crude title-keyword flag: ~2,000 ever-treated, ~1,100 with ≥12m pre and post; it includes accessories (watch bands) — use the `Category` field (e.g. WEARABLE_COMPUTER, BIOMETRIC_MONITOR, SHOES) in the audit.
+- Packages in the existing container: R `did`, `fixest`, `HonestDiD`, `didimputation`, `bacondecomp`; Python `pyfixest`. Pitfalls: HonestDiD is GitHub-only, Rglpk needs conda `glpk`, CVXR pinned to 1.0-15 (no Rust), R `arrow` unavailable (use pyarrow). Run estimation in R, data prep in Python.
