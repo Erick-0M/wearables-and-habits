@@ -1,0 +1,1353 @@
+"e","att","se","spec","panel","outcome","name","cond"
+-4,-0.0384716011797165,0.0120420838623355,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+-3,-0.0154435280255849,0.0134733209178347,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+-2,-0.0371058158851899,0.0128303164793137,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+-1,0,NA,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+0,-0.0193753064555082,0.0153035281736966,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+1,-0.0225908023096683,0.0141561687160342,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+2,-0.02384223853399,0.0138206345126218,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+3,-0.0284820664066216,0.0138118120746414,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+4,-0.0230966825962545,0.0136615319554463,"main_all","balanced","run_shoe_d","Running shoe",FALSE
+-4,-0.0389233156865465,0.0121652560031678,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+-3,-0.0178563250173489,0.0136067908002617,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+-2,-0.0400319639246679,0.0130335235350725,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+-1,0,NA,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+0,-0.0188208942527876,0.0154562075183779,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+1,-0.0225161446854825,0.0142580873898258,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+2,-0.0241927901187235,0.0138362485075162,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+3,-0.0299697403895286,0.013894507215456,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+4,-0.0245636384232947,0.0138065210863068,"main_all","balanced","run_shoe_d","Running shoe",TRUE
+-4,-0.108691078211105,0.0221696648274815,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+-3,-0.073623420153246,0.0216290599411958,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+-2,-0.0936281038911616,0.0222776447832473,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+-1,0,NA,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+0,-0.00896588189662112,0.0241621527481707,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+1,-0.0127695893679149,0.0234681162572434,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+2,-0.0383956733971005,0.024811179910575,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+3,-0.0497409307465439,0.0237771462230639,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+4,-0.0395428232693954,0.0233662351733098,"main_all","balanced","run_any_d","Running-related (keyword)",FALSE
+-4,-0.108936995779195,0.0224058754386435,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+-3,-0.0727025282682645,0.0217965773105401,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+-2,-0.0975638923281388,0.0223600632935233,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+-1,0,NA,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+0,-0.00634778835564714,0.0239852674479278,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+1,-0.0132029568596162,0.0235369081619511,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+2,-0.0400466569397799,0.0248818523836531,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+3,-0.0489860229021838,0.0236913681966693,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+4,-0.0369599585479916,0.0234155595374152,"main_all","balanced","run_any_d","Running-related (keyword)",TRUE
+-4,-0.0117102595815373,0.0181924932721268,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+-3,-0.0109143900529116,0.0194541369680236,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+-2,-0.00202077676865994,0.0189434503797631,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+-1,0,NA,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+0,0.00548235182190087,0.0186957848476668,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+1,-0.00068700921379068,0.0177641406935457,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+2,-0.00366923296473292,0.01908555200347,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+3,-0.0144765922879328,0.0192650915538343,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+4,0.016509261359894,0.0211621077822935,"main_all","balanced","fit_gear_d","Fitness gear",FALSE
+-4,-0.0153757084219235,0.0177342184945509,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+-3,-0.0137159651250994,0.0196809324861501,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+-2,-0.0042093660749117,0.0190428822780004,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+-1,0,NA,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+0,0.00605994078290952,0.0187227168511732,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+1,-0.000807784950365853,0.0179445532697727,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+2,-0.000491383507661372,0.0190875114577396,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+3,-0.0152362127376977,0.0194745359636658,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+4,0.0175778144200213,0.0212609850859872,"main_all","balanced","fit_gear_d","Fitness gear",TRUE
+-4,-0.014154585306236,0.0227433687019394,"main_all","balanced","supp_d","Supplements",FALSE
+-3,-0.0208161047400891,0.022656522988263,"main_all","balanced","supp_d","Supplements",FALSE
+-2,-0.0084362170034323,0.0220104081565572,"main_all","balanced","supp_d","Supplements",FALSE
+-1,0,NA,"main_all","balanced","supp_d","Supplements",FALSE
+0,0.0141930065938248,0.0213096979076403,"main_all","balanced","supp_d","Supplements",FALSE
+1,0.0287574189676749,0.0225961315763606,"main_all","balanced","supp_d","Supplements",FALSE
+2,0.0369841484744919,0.0230148577747334,"main_all","balanced","supp_d","Supplements",FALSE
+3,0.0192563834224951,0.0231786428650144,"main_all","balanced","supp_d","Supplements",FALSE
+4,0.023199139363158,0.0240008493796934,"main_all","balanced","supp_d","Supplements",FALSE
+-4,-0.00930308507538315,0.0229858474184569,"main_all","balanced","supp_d","Supplements",TRUE
+-3,-0.022949842533355,0.0227185779812628,"main_all","balanced","supp_d","Supplements",TRUE
+-2,-0.00520399959111469,0.0222374158565955,"main_all","balanced","supp_d","Supplements",TRUE
+-1,0,NA,"main_all","balanced","supp_d","Supplements",TRUE
+0,0.0140031077400981,0.0214361902329324,"main_all","balanced","supp_d","Supplements",TRUE
+1,0.0295760747501512,0.0229673121070456,"main_all","balanced","supp_d","Supplements",TRUE
+2,0.0377908142516927,0.0231706123837463,"main_all","balanced","supp_d","Supplements",TRUE
+3,0.0172943435881432,0.0234699989873099,"main_all","balanced","supp_d","Supplements",TRUE
+4,0.0255940804095572,0.0243803643914287,"main_all","balanced","supp_d","Supplements",TRUE
+-4,-0.0415041385215488,0.0187224337873642,"main_all","balanced","med_d","Medication",FALSE
+-3,-0.0464842692271101,0.0189650674979957,"main_all","balanced","med_d","Medication",FALSE
+-2,-0.00785623851935335,0.0194197590348139,"main_all","balanced","med_d","Medication",FALSE
+-1,0,NA,"main_all","balanced","med_d","Medication",FALSE
+0,0.0127942887670792,0.0193339585734152,"main_all","balanced","med_d","Medication",FALSE
+1,-0.0104707156605168,0.019895983814714,"main_all","balanced","med_d","Medication",FALSE
+2,-0.0316362711591519,0.0192466551808491,"main_all","balanced","med_d","Medication",FALSE
+3,-0.00387963525390982,0.0212538450614025,"main_all","balanced","med_d","Medication",FALSE
+4,-0.0234433889771155,0.0200095169625227,"main_all","balanced","med_d","Medication",FALSE
+-4,-0.0404937425726616,0.0189108724866639,"main_all","balanced","med_d","Medication",TRUE
+-3,-0.0473173552695016,0.0192590672634039,"main_all","balanced","med_d","Medication",TRUE
+-2,-0.0098242687625057,0.0196189214622437,"main_all","balanced","med_d","Medication",TRUE
+-1,0,NA,"main_all","balanced","med_d","Medication",TRUE
+0,0.0103815402341134,0.0195477465037025,"main_all","balanced","med_d","Medication",TRUE
+1,-0.0164200459437306,0.0202163065303506,"main_all","balanced","med_d","Medication",TRUE
+2,-0.0362809886491023,0.0195955428338117,"main_all","balanced","med_d","Medication",TRUE
+3,-0.0125861369572163,0.0216170865449559,"main_all","balanced","med_d","Medication",TRUE
+4,-0.0340394933629815,0.0203235764121692,"main_all","balanced","med_d","Medication",TRUE
+-4,-0.0425424280790088,0.0217342078231483,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+-3,-0.0520507819646817,0.0205822112378698,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+-2,-0.0473569813309134,0.0201672933507071,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+-1,0,NA,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+0,-0.0125445503977518,0.0189039042242742,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+1,-0.00159722781262121,0.0192290210459841,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+2,-0.00964374318479541,0.0207661584793613,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+3,-0.00366374420936309,0.0217439237092544,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+4,-0.00492432835930124,0.0223304500141101,"main_all","balanced","pet_d","PLACEBO: pet",FALSE
+-4,-0.043897537597301,0.0219464696437735,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+-3,-0.0541698468017964,0.020712798468665,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+-2,-0.0481553994122685,0.0204665111516999,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+-1,0,NA,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+0,-0.00917266609703338,0.0190651816959799,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+1,0.00108710243305937,0.0195176791639719,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+2,-0.00827113283114875,0.0209263669673948,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+3,-8.15529567569531e-05,0.0220798616121208,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+4,-0.000170264922013499,0.0227520514208166,"main_all","balanced","pet_d","PLACEBO: pet",TRUE
+-4,-0.0137895830741421,0.0261349890625474,"main_all","balanced","book_d","PLACEBO: books",FALSE
+-3,-0.0193615845670836,0.0251423555776204,"main_all","balanced","book_d","PLACEBO: books",FALSE
+-2,-0.0325894850083795,0.0262539270322194,"main_all","balanced","book_d","PLACEBO: books",FALSE
+-1,0,NA,"main_all","balanced","book_d","PLACEBO: books",FALSE
+0,0.0442128392965611,0.0263490250798913,"main_all","balanced","book_d","PLACEBO: books",FALSE
+1,0.0148726974671224,0.0259743340750324,"main_all","balanced","book_d","PLACEBO: books",FALSE
+2,0.0210018076301018,0.0266427248069848,"main_all","balanced","book_d","PLACEBO: books",FALSE
+3,0.0279432535878164,0.0278757162297151,"main_all","balanced","book_d","PLACEBO: books",FALSE
+4,0.0468575045922587,0.0280653948966508,"main_all","balanced","book_d","PLACEBO: books",FALSE
+-4,-0.0223154216769113,0.0269200107034722,"main_all","balanced","book_d","PLACEBO: books",TRUE
+-3,-0.0232487191779237,0.0254806315934406,"main_all","balanced","book_d","PLACEBO: books",TRUE
+-2,-0.0337192182413258,0.0268555384628601,"main_all","balanced","book_d","PLACEBO: books",TRUE
+-1,0,NA,"main_all","balanced","book_d","PLACEBO: books",TRUE
+0,0.0499068593572794,0.0271337719100084,"main_all","balanced","book_d","PLACEBO: books",TRUE
+1,0.0195174643704372,0.0262054568088559,"main_all","balanced","book_d","PLACEBO: books",TRUE
+2,0.0295109474831744,0.0270868329089365,"main_all","balanced","book_d","PLACEBO: books",TRUE
+3,0.0336301753276512,0.0280392727059047,"main_all","balanced","book_d","PLACEBO: books",TRUE
+4,0.0544566726049233,0.0285242373132978,"main_all","balanced","book_d","PLACEBO: books",TRUE
+-4,0.019130142048989,0.0211045145040035,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-3,-0.00206560160418024,0.0202483071607544,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-2,0.0233766091201159,0.0203707214714073,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-1,0,NA,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+0,0.0349029953967638,0.0211139065022618,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+1,0.0236528764737308,0.0211081384588079,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+2,0.0233528245135133,0.0216027764308505,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+3,-0.0213201554415521,0.0180379976488648,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+4,0.00692315010648185,0.0208319583507815,"main_all","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-4,0.0138695972926911,0.0211955250202971,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-3,-0.00282648835045205,0.0204453901880787,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-2,0.0218901243171354,0.020271383495932,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-1,0,NA,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+0,0.0373942922771098,0.0214438386573907,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+1,0.0290285312931553,0.0211685766810238,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+2,0.0272665998055294,0.0218506786965609,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+3,-0.0150192947459996,0.0183594693985184,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+4,0.0112483249963945,0.0210076608647751,"main_all","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-4,-0.0128720461348185,0.0282092276155453,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-3,-0.0184074559252944,0.0278196629217036,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-2,0.0166043997863045,0.0289947240492347,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-1,0,NA,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+0,0.0425076659616665,0.0297574623777791,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+1,-0.0173801438785741,0.0292784526212438,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+2,0.0151727494273399,0.0291939028556667,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+3,0.0048548041246167,0.028162992060008,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+4,0.0161945727186903,0.0291981159556637,"main_all","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-4,-0.0136167065003276,0.0286368815381178,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-3,-0.0191641564965854,0.028113745476118,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-2,0.0194848910363758,0.0293891355752003,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-1,0,NA,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+0,0.0455754775380112,0.0301723175232007,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+1,-0.014523493809225,0.0297010151954584,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+2,0.0198761583745823,0.0292984552655922,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+3,0.00796861084096087,0.0285696077248277,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+4,0.0179152377960734,0.0294423830011788,"main_all","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-4,0.00395830741421076,0.0201073693156629,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-3,-0.00687924006352319,0.0183234901123921,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-2,0.0114714987229496,0.0179515655707913,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-1,0,NA,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+0,0.0138856362931142,0.0200902461631551,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+1,0.0209707046830061,0.0209787075369231,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+2,0.0252272344723111,0.0211842643213947,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+3,0.0238943817100034,0.0211579474703578,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+4,-0.00341400584003571,0.0208173444811106,"main_all","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-4,0.00943346495849156,0.0203707676072628,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-3,-0.00355852311264541,0.0185858387846902,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-2,0.0130613952171083,0.0180743280126747,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-1,0,NA,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+0,0.0180896664529755,0.0201246839584921,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+1,0.0196408284004753,0.0210605695132886,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+2,0.0237373401596842,0.0212827672825602,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+3,0.0254699839511062,0.0211855290219013,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+4,-0.00159107836656354,0.0208530674263153,"main_all","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-4,0.000740067182365723,0.0213731349114863,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-3,0.006591080406607,0.0194266238926636,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-2,-0.000120752618136311,0.0175542408710803,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-1,0,NA,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+0,0.024541140051082,0.0200915996242385,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+1,0.0128272212992982,0.0206962938331633,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+2,0.0270348645741092,0.0223351046535606,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+3,0.0128921715711745,0.0210993311767231,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+4,0.0190395775853867,0.0218069641696536,"main_all","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-4,0.00265981689373092,0.0213592412508173,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-3,0.0123953541244271,0.0196145544178704,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-2,0.00423218520927729,0.0176520320997809,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-1,0,NA,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+0,0.0256718455241964,0.0202207907693331,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+1,0.0174719011200739,0.0208838465462176,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+2,0.0301018873099996,0.0224200594992597,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+3,0.011988287777611,0.0212336386690723,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+4,0.0195980127530518,0.0219633227589937,"main_all","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-4,-0.0847282383147847,0.0435605569777316,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-3,-0.0782447861570335,0.0393805664579928,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-2,-0.079352844766702,0.0369060927257979,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-1,0,NA,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+0,0.210505276217459,0.0333346949723026,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+1,0.0258166647270104,0.0365479070970229,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+2,0.00744903052510037,0.0397765423242517,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+3,-0.0276988241819993,0.0416028531133754,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+4,9.21223872091399e-05,0.0427044330093951,"main_all","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-4,-0.128732688057763,0.0434907392320389,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-3,-0.113956741148518,0.0389637780845858,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-2,-0.0968287114048034,0.0371411264212178,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-1,0,NA,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+0,0.233013869655671,0.0332616737125809,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+1,0.0548091359200074,0.0370272039420682,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+2,0.0419646032760799,0.0402693859550735,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+3,0.0132674832503343,0.0415074752332627,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+4,0.0553259612514769,0.0426980276317091,"main_all","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-4,-0.139649321376774,0.0724255674044432,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+-3,-0.117564555453792,0.070553214328299,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+-2,-0.0870020508609103,0.0651984886469448,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+-1,0,NA,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+0,0.491839993294253,0.0540742453662442,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+1,0.0290890942152793,0.0613241121914397,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+2,-0.0192402219451894,0.0641069448145317,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+3,-0.0867750264163154,0.0642258700150237,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+4,-0.0285246092754234,0.0650645084031936,"main_all","balanced","ln_spend","General: ln(1+spend)",FALSE
+-4,-0.206800479360907,0.0718994949074547,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+-3,-0.190410487437736,0.0697460270801984,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+-2,-0.121656460139683,0.0650910091909638,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+-1,0,NA,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+0,0.521825782536849,0.0540691227722467,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+1,0.0710658721843012,0.0617495004687966,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+2,0.0348425231502088,0.0649490650608752,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+3,-0.018891057704393,0.063626303748701,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+4,0.0682903173105119,0.0645408127914624,"main_all","balanced","ln_spend","General: ln(1+spend)",TRUE
+-8,-0.0222153333377251,0.014724004460232,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-7,-0.042781545681998,0.0119148089402605,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-6,-0.0229500574731983,0.0122067235334679,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-5,-0.0230082746240655,0.0125659299219394,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-4,-0.0319241442674143,0.0121592819384728,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-3,-0.0158399223011197,0.0132646617855648,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-2,-0.0333820222132342,0.0121508167966562,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-1,0,NA,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+0,-0.018881394608851,0.0143848420530569,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+1,-0.0219371157454427,0.0129243211685066,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+2,-0.0129227072099215,0.0137706453159278,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+3,-0.0263875628332334,0.0130917432858851,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+4,-0.0180982828371865,0.0124256289558561,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+5,-0.0223701583358745,0.0145274513584078,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+6,-0.0249242713432,0.0149892937394586,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+7,-0.00597422277295008,0.0164238453791712,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+8,-0.0195469713079712,0.0157930253839065,"main_all","unbalanced","run_shoe_d","Running shoe",FALSE
+-8,-0.0360554113193188,0.02700786118632,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-7,-0.0482755550175079,0.0190702503975434,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-6,-0.0269780173578926,0.0216993730962029,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-5,-0.0292921747439758,0.0205214229871131,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-4,-0.0492846751784664,0.0188007236979055,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-3,-0.0142914039126517,0.0225960325418402,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-2,-0.0314768499257821,0.0208858758513711,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-1,0,NA,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+0,-0.0134969296098294,0.0226529522862747,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+1,-0.0348234867668758,0.0184307122347646,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+2,-0.0136442918998965,0.0215762219196681,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+3,-0.023467153147056,0.0216035905159239,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+4,-0.0185371045888936,0.0195988219956603,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+5,-0.0409002813102828,0.0224248149271221,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+6,-0.0187598039543873,0.0248645719247181,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+7,0.00908285781270074,0.0273650186715388,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+8,-0.0277323759888621,0.0242085960361829,"main_all","unbalanced","run_shoe_d","Running shoe",TRUE
+-8,-0.0548685710391623,0.0270411134103354,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-7,-0.112444009363556,0.0235500365324264,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-6,-0.0567941211098106,0.0234814717588471,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-5,-0.0924382987946119,0.0214547576385526,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-4,-0.0978578874121499,0.0220123799499817,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-3,-0.0771119093713928,0.0217512843846345,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-2,-0.0814945938266589,0.022297950720742,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-1,0,NA,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+0,-0.00920584625683288,0.023561918101185,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+1,-0.00669034762382522,0.0233635801369622,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+2,-0.0238777305885007,0.0247475365826374,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+3,-0.0288572000859487,0.0237223160401721,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+4,-0.0378706644000157,0.0227312350675858,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+5,-0.0682491714127195,0.0251792862149883,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+6,-0.0767977359738898,0.0263488521042205,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+7,-0.0227155170599116,0.0282147442173409,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+8,-0.0512277982262719,0.030984946271864,"main_all","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-8,-0.0447163043118656,0.0449364878554366,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-7,-0.114661608620392,0.0339283695052012,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-6,-0.0561242436840028,0.0375672107673841,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-5,-0.0965055810390718,0.0346904306956214,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-4,-0.1102197555127,0.0337216063329369,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-3,-0.0455401509190141,0.0348128997563149,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-2,-0.0501087641408412,0.0352611401795708,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-1,0,NA,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+0,-0.00356324350706371,0.0359483050832883,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+1,0.00532910859400529,0.0359420394030968,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+2,-0.0203212475732842,0.0381108052375586,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+3,0.0139487151934714,0.0387546163776181,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+4,-0.0260675780965469,0.0345780379727522,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+5,-0.0538964567832709,0.0407322279284472,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+6,-0.0688110965693911,0.0421502455044013,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+7,-0.0347819968411205,0.0431749696663461,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+8,-0.0440165699779786,0.0454705356356603,"main_all","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-8,-0.0347619816277101,0.0221307686567542,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-7,-0.0559945871407687,0.0191177222278655,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-6,-0.0248968513565842,0.0186415668752787,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-5,-0.0287336784827182,0.0191210222071245,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-4,-0.0284084788072867,0.0186158455096868,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-3,-0.0358823571519364,0.0192831051821349,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-2,-0.0202597237339827,0.0187669433983841,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-1,0,NA,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+0,-0.00407583066752655,0.0194625232065247,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+1,-0.00750842527457285,0.0177999419435176,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+2,-0.0182835535458101,0.0192322935484709,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+3,-0.025208026220492,0.0189210972231327,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+4,-0.000372737127346186,0.0212402828575376,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+5,-0.0280233382318105,0.0191968684398844,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+6,-0.0192989306460225,0.0207733038128636,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+7,-0.0227703918354488,0.0237406811614837,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+8,-0.0091418196807606,0.0246629828501289,"main_all","unbalanced","fit_gear_d","Fitness gear",FALSE
+-8,-0.04264810306676,0.0366403525443718,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-7,-0.0506266522695065,0.0285433415122994,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-6,-0.0118846076513492,0.028920646915468,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-5,-0.064824409358982,0.0275124514507464,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-4,-0.0263873487586714,0.0282324906230778,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-3,-0.0298533053185712,0.0308283718048076,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-2,-0.0297947064363117,0.0284716187120475,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-1,0,NA,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+0,-0.00322343046974359,0.0302783324706632,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+1,0.0253110880882538,0.027399069775834,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+2,-0.0315605681161179,0.0287313726404806,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+3,-0.0280995164475649,0.0300572496077018,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+4,-0.0220595610573261,0.0335491223380332,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+5,-0.0211659690873798,0.0307147475867376,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+6,-0.00822936671288715,0.0294498372008452,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+7,-0.0351925902996834,0.0307995905295846,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+8,0.0359502143092715,0.0361798798642652,"main_all","unbalanced","fit_gear_d","Fitness gear",TRUE
+-8,-0.0815369032521017,0.0262987167528483,"main_all","unbalanced","supp_d","Supplements",FALSE
+-7,-0.0593054538646063,0.0245312889390155,"main_all","unbalanced","supp_d","Supplements",FALSE
+-6,-0.0784059532770371,0.0232921047752336,"main_all","unbalanced","supp_d","Supplements",FALSE
+-5,-0.0304291844731861,0.0230666632348295,"main_all","unbalanced","supp_d","Supplements",FALSE
+-4,-0.0313478237651031,0.0226313674355777,"main_all","unbalanced","supp_d","Supplements",FALSE
+-3,-0.0411550997435734,0.0223376669369244,"main_all","unbalanced","supp_d","Supplements",FALSE
+-2,-0.0159895535233127,0.021811658002937,"main_all","unbalanced","supp_d","Supplements",FALSE
+-1,0,NA,"main_all","unbalanced","supp_d","Supplements",FALSE
+0,0.0229934100058306,0.0220581591087409,"main_all","unbalanced","supp_d","Supplements",FALSE
+1,0.0303930314468013,0.0219623676288784,"main_all","unbalanced","supp_d","Supplements",FALSE
+2,0.0275943235943979,0.0228072347759322,"main_all","unbalanced","supp_d","Supplements",FALSE
+3,0.0252710666947438,0.0234724920627132,"main_all","unbalanced","supp_d","Supplements",FALSE
+4,0.0229929842724655,0.0237232070914177,"main_all","unbalanced","supp_d","Supplements",FALSE
+5,0.0116345172415221,0.0261873457830637,"main_all","unbalanced","supp_d","Supplements",FALSE
+6,0.00567338152135178,0.0273863604963289,"main_all","unbalanced","supp_d","Supplements",FALSE
+7,0.0559974481514917,0.0313971708568661,"main_all","unbalanced","supp_d","Supplements",FALSE
+8,0.00772968659311909,0.0347084073187011,"main_all","unbalanced","supp_d","Supplements",FALSE
+-8,-0.0517546542346288,0.0412733485431693,"main_all","unbalanced","supp_d","Supplements",TRUE
+-7,-0.0190946441636147,0.0370984946021199,"main_all","unbalanced","supp_d","Supplements",TRUE
+-6,-0.0406354584732297,0.0362751356507971,"main_all","unbalanced","supp_d","Supplements",TRUE
+-5,-0.013413884801561,0.0356552027384217,"main_all","unbalanced","supp_d","Supplements",TRUE
+-4,-0.0188441397782419,0.0347378884236112,"main_all","unbalanced","supp_d","Supplements",TRUE
+-3,-0.0217438082745649,0.0335807885759498,"main_all","unbalanced","supp_d","Supplements",TRUE
+-2,-0.0331530445731402,0.0333098232999946,"main_all","unbalanced","supp_d","Supplements",TRUE
+-1,0,NA,"main_all","unbalanced","supp_d","Supplements",TRUE
+0,0.0371336628172658,0.0334516634640135,"main_all","unbalanced","supp_d","Supplements",TRUE
+1,0.0340050833370321,0.0316307715738336,"main_all","unbalanced","supp_d","Supplements",TRUE
+2,0.0214376296166417,0.0333390628510052,"main_all","unbalanced","supp_d","Supplements",TRUE
+3,0.0593735718453612,0.03513805564161,"main_all","unbalanced","supp_d","Supplements",TRUE
+4,0.00682283645251367,0.0360278995983992,"main_all","unbalanced","supp_d","Supplements",TRUE
+5,0.0316002959605863,0.0381115296448817,"main_all","unbalanced","supp_d","Supplements",TRUE
+6,0.00862567587324587,0.0377057152616409,"main_all","unbalanced","supp_d","Supplements",TRUE
+7,0.0300454721023422,0.0416647552122977,"main_all","unbalanced","supp_d","Supplements",TRUE
+8,0.043722021308583,0.0401071295891016,"main_all","unbalanced","supp_d","Supplements",TRUE
+-8,-0.044430309673732,0.0243006730953115,"main_all","unbalanced","med_d","Medication",FALSE
+-7,-0.050950661385733,0.0205144369745665,"main_all","unbalanced","med_d","Medication",FALSE
+-6,-0.0315141497388911,0.0186401968957513,"main_all","unbalanced","med_d","Medication",FALSE
+-5,-0.0611612600891199,0.0188644981982032,"main_all","unbalanced","med_d","Medication",FALSE
+-4,-0.0471283468564372,0.0186620003050103,"main_all","unbalanced","med_d","Medication",FALSE
+-3,-0.0571956302377933,0.0187498820424826,"main_all","unbalanced","med_d","Medication",FALSE
+-2,-0.00858936414294905,0.0197827631648246,"main_all","unbalanced","med_d","Medication",FALSE
+-1,0,NA,"main_all","unbalanced","med_d","Medication",FALSE
+0,0.0106880362976134,0.0191568213768228,"main_all","unbalanced","med_d","Medication",FALSE
+1,-0.0106535473906194,0.0200842511061293,"main_all","unbalanced","med_d","Medication",FALSE
+2,-0.0198503972586309,0.0200573400714118,"main_all","unbalanced","med_d","Medication",FALSE
+3,-0.00467063001127034,0.0209241458718924,"main_all","unbalanced","med_d","Medication",FALSE
+4,-0.025757278349551,0.0195658424294631,"main_all","unbalanced","med_d","Medication",FALSE
+5,0.00854791194144135,0.0220990689090579,"main_all","unbalanced","med_d","Medication",FALSE
+6,-0.034168482590277,0.0246613578335765,"main_all","unbalanced","med_d","Medication",FALSE
+7,0.0114950143588523,0.0278361544097029,"main_all","unbalanced","med_d","Medication",FALSE
+8,-0.00260232971987439,0.0304202740217359,"main_all","unbalanced","med_d","Medication",FALSE
+-8,-0.0903124446858203,0.0394988052105745,"main_all","unbalanced","med_d","Medication",TRUE
+-7,-0.0647348071326997,0.0312601514011495,"main_all","unbalanced","med_d","Medication",TRUE
+-6,-0.0461913449774891,0.0317021440911153,"main_all","unbalanced","med_d","Medication",TRUE
+-5,-0.0788114475531849,0.0283626253774497,"main_all","unbalanced","med_d","Medication",TRUE
+-4,-0.0517700090290192,0.0296002955858253,"main_all","unbalanced","med_d","Medication",TRUE
+-3,-0.06813931921545,0.0289857783504922,"main_all","unbalanced","med_d","Medication",TRUE
+-2,-0.0116460792186882,0.0325924755067321,"main_all","unbalanced","med_d","Medication",TRUE
+-1,0,NA,"main_all","unbalanced","med_d","Medication",TRUE
+0,-0.0105191895478696,0.028380055822481,"main_all","unbalanced","med_d","Medication",TRUE
+1,-0.0118823706990024,0.0310934198957764,"main_all","unbalanced","med_d","Medication",TRUE
+2,-0.0414484517309749,0.0306486579329286,"main_all","unbalanced","med_d","Medication",TRUE
+3,-0.020774838511968,0.0321993517740794,"main_all","unbalanced","med_d","Medication",TRUE
+4,-0.033694849285693,0.0320516837427063,"main_all","unbalanced","med_d","Medication",TRUE
+5,-0.023384338807467,0.0338992519467186,"main_all","unbalanced","med_d","Medication",TRUE
+6,-0.0282990627166071,0.0384339116133455,"main_all","unbalanced","med_d","Medication",TRUE
+7,0.0277914435759084,0.0405689849195633,"main_all","unbalanced","med_d","Medication",TRUE
+8,-0.0282937367923583,0.039271230816487,"main_all","unbalanced","med_d","Medication",TRUE
+-8,-0.0665884914925381,0.0269422259470586,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-7,-0.0700811643943836,0.023905680355935,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-6,-0.0710949843518272,0.0219472259412627,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-5,-0.0555902623407554,0.0215258636387551,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-4,-0.0525514146912245,0.0212398327374893,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-3,-0.0566147770875782,0.0197338683333465,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-2,-0.0501311132683155,0.0197815714395567,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-1,0,NA,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+0,-0.00952373442485382,0.0191943290395784,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+1,0.00629434185237412,0.0190358294136122,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+2,-0.0188165889964559,0.0209878053320495,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+3,-0.0181909932685541,0.021380870479804,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+4,-0.0315204511917579,0.0216815281367904,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+5,-0.0402470437486094,0.0255741082845965,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+6,-0.043762815247,0.026566143804455,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+7,-0.0504264199034244,0.0283295608588908,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+8,-0.025615486840312,0.0314562839704219,"main_all","unbalanced","pet_d","PLACEBO: pet",FALSE
+-8,-0.12958939521889,0.0444558989311544,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-7,-0.119926152822059,0.0359853606162586,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-6,-0.113896929897615,0.0346681079618755,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-5,-0.0667805106794949,0.0329924719719513,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-4,-0.0958643466222043,0.0316638936306958,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-3,-0.101023467784676,0.0293118188416486,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-2,-0.0643488113948155,0.0296834414674922,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-1,0,NA,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+0,-0.0331142247484689,0.0299189284218536,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+1,-0.0204283803441004,0.0277277188887865,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+2,-0.0670463053065014,0.0315748982759443,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+3,-0.0265192143865998,0.0333970624188231,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+4,-0.0365333690804853,0.0340963507872116,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+5,-0.0542920839942221,0.039113543977894,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+6,-0.0224380557882744,0.0430315462664301,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+7,-0.0211896724243913,0.0406793974611311,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+8,-0.0332595107049471,0.0424838265979257,"main_all","unbalanced","pet_d","PLACEBO: pet",TRUE
+-8,-0.0717377421053421,0.0311144175758999,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-7,-0.0741750870691573,0.0273129220952988,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-6,-0.0629370916914606,0.0271707958959962,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-5,-0.0554711128755634,0.0270945517057987,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-4,-0.039294760439153,0.026258808405833,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-3,-0.0654566240404237,0.0250957606432713,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-2,-0.0585073400328428,0.0251038819524188,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-1,0,NA,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+0,0.0389798664995173,0.025692750849782,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+1,9.27808842682173e-05,0.025619454801474,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+2,-0.0196802976122716,0.0258855280897531,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+3,-0.0108476274676815,0.026804370557012,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+4,0.0199332138245453,0.0272316699223597,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+5,-0.0406255643871902,0.028631044569847,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+6,-0.0383956474918942,0.0312065052315679,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+7,-0.0424211290584378,0.0344921209615045,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+8,0.0210909319326152,0.0387978370707519,"main_all","unbalanced","book_d","PLACEBO: books",FALSE
+-8,-0.134100323814047,0.0468868326491207,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-7,-0.107047375449258,0.0386136710078815,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-6,-0.03464605650339,0.0418165272003431,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-5,-0.0892324886450475,0.0383197213435034,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-4,-0.0717022125088611,0.0402196518961087,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-3,-0.0776952566119737,0.0380473967132357,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-2,-0.0870368710706021,0.0380790470539836,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-1,0,NA,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+0,0.0268646262470048,0.0389123861704454,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+1,0.00807309988045339,0.0398155370936833,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+2,-0.0460673773031106,0.0377384107572116,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+3,0.0351598772391709,0.0378680926103007,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+4,0.031658144589321,0.0416502374861108,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+5,-0.0544572776395758,0.0451316601249469,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+6,-0.025934554111195,0.050462296951671,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+7,-0.0047740518067565,0.0479429484895032,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+8,0.0418720268931541,0.0490918051164572,"main_all","unbalanced","book_d","PLACEBO: books",TRUE
+-8,0.0139715967471691,0.0230361661737492,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-7,-0.0249651035016337,0.0201319712269337,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-6,-0.00211383852872271,0.0199075411915564,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-5,-0.0147406501547458,0.0173796187617126,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-4,0.01680918683073,0.0210548998689723,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-3,-1.63049283428106e-06,0.0202914297680947,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-2,0.0152304343302079,0.0198942622012465,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-1,0,NA,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+0,0.0360406036935913,0.0202573863004038,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+1,0.019588508946637,0.0199740606103151,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+2,0.012343033239552,0.0206068691382359,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+3,-0.0246327383394966,0.0171587662261946,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+4,0.0129412288231262,0.020110755126877,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+5,-0.0139017998020713,0.0203456874345674,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+6,-0.0104474377343439,0.0222572323705091,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+7,-0.0239783777317599,0.0241135078376446,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+8,-0.0346037091428878,0.0251080712079505,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-8,0.0471689727222404,0.0378997430013657,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-7,-0.0322251149657591,0.0273608324548899,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-6,0.0199493799229048,0.0290138392356246,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-5,0.0040472502670282,0.0272954099450415,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-4,0.0127715685607409,0.0301584094574179,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-3,0.00443339623261641,0.0295726654095909,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-2,0.0300109251816972,0.028873624613414,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-1,0,NA,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+0,0.0269452631919851,0.0295078391764273,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+1,0.0433956709315619,0.0303646016001259,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+2,0.0164719324445697,0.0298641528854393,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+3,0.00388328063542469,0.0258895998209311,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+4,-0.00049643714668023,0.0278506533716191,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+5,-0.0192282710354706,0.0303935559421376,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+6,0.0192586505029954,0.0323836427531487,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+7,0.00513999285727469,0.0322610196145031,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+8,-0.000101070982659758,0.0364648429541235,"main_all","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-8,-0.128617227010853,0.0288954275956143,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-7,-0.0901431953584959,0.027385040228324,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-6,-0.0618782061197989,0.0275952582108597,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-5,-0.0484131591794286,0.0272692473259633,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-4,-0.0120582889463507,0.0278630392838057,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-3,-0.0294479505362357,0.027450351482663,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-2,0.0118490461833232,0.0286057668523876,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-1,0,NA,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+0,0.0504206887723519,0.0287748167858185,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+1,-0.00631269993468477,0.028283836017868,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+2,0.0194860583858963,0.0290424640186419,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+3,0.0145684042667219,0.0283295315978433,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+4,0.0231073629420258,0.0291691873914801,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+5,-0.0235366123669783,0.0298178889837679,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+6,0.0325130222013528,0.0313029332867341,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+7,-0.0200153430949966,0.0328662755231654,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+8,-0.0354217210734562,0.0371909649782079,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-8,-0.167557071246202,0.0514822682291618,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-7,-0.118242216875615,0.0418186626732872,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-6,-0.114424069395962,0.0408567698370703,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-5,-0.0637934597784052,0.0419123737358734,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-4,0.000333576598266561,0.0437739107994491,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-3,-0.0606742490424616,0.0431156022405928,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-2,-0.0411153327266552,0.0430166778741876,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-1,0,NA,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+0,0.0343210086067314,0.0441160750533889,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+1,-0.00654950469200244,0.0434431271121469,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+2,-0.0374141119897975,0.0421863216541563,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+3,0.00964220338183708,0.0437044877560319,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+4,0.00227073040884955,0.0445454437502533,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+5,-0.0696096041433214,0.0434485341584444,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+6,-0.0373442215097109,0.0508140085401243,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+7,-0.0472553156594052,0.0518358551191491,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+8,-0.069907896231238,0.0480874705543699,"main_all","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-8,0.00550793600808858,0.0203066575233015,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-7,-0.0279114208654053,0.0199221311043095,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-6,0.0188398212349151,0.0192853265282334,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-5,-0.0267214952966307,0.018626785421208,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-4,-0.00385672558173109,0.0195178406626367,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-3,-0.0111802621799387,0.0184477794346743,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-2,0.00798349687430692,0.0180910139816154,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-1,0,NA,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+0,0.0187757156175948,0.0197120143290453,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+1,0.0204166091513484,0.0202591170472657,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+2,0.0319043961349192,0.0207406918327241,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+3,0.0326705767868829,0.0205095834034996,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+4,0.0152456745915615,0.02047873664433,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+5,-0.00886765176120103,0.0207418656442371,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+6,0.0287448383861931,0.0225966895480121,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+7,0.0580833676888989,0.0269875180530263,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+8,0.051855848306372,0.0296451765599566,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-8,-0.00514652486162235,0.0325018243557897,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-7,-0.0548856377240672,0.0296994116468016,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-6,-0.0239268171162395,0.02818299466273,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-5,-0.0364941656710834,0.0319409685758716,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-4,-0.0239450294089163,0.0302711791382639,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-3,-0.0132668021495119,0.0299715573427277,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-2,0.0144361156160354,0.0306433349218465,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-1,0,NA,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+0,0.00163872348895113,0.0302110909222953,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+1,0.00910871117481072,0.0325394612896007,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+2,0.0153293102424454,0.0328172392823537,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+3,0.0018301022245269,0.0312272924220791,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+4,-0.0239926926442728,0.0315723506929624,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+5,-0.0469316905984283,0.0282641441645412,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+6,0.0543600018367624,0.0378323224906902,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+7,0.00261427278612293,0.0358495477737854,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+8,0.0741061852084354,0.0433280030750384,"main_all","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-8,-0.0438764162175385,0.0244401663117996,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-7,-0.0331838088303275,0.0221854964529928,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-6,-0.019882755959487,0.0206615052510641,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-5,0.0109412444112452,0.0214137797871192,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-4,0.00812962209048524,0.021119750221734,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-3,0.00691945326933021,0.0192105657709422,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-2,0.00571878959323177,0.0174788635985298,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-1,0,NA,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+0,0.0208854235400612,0.0194077099118335,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+1,0.00692517977365451,0.0201978410364495,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+2,0.0156902953961053,0.0218891608149329,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+3,0.016510712314335,0.0210813588870788,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+4,0.0208233329129098,0.0209054972208897,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+5,0.0221932333247306,0.0235679192113382,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+6,0.00361239303331846,0.0236568508690797,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+7,-0.0105352351481863,0.0269118158275229,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+8,0.0521360219680908,0.0298735935570853,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-8,-0.0351956365396137,0.0388103342578277,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-7,-3.32797427785182e-05,0.0325696120996229,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-6,0.00837855084648266,0.0301631327506802,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-5,0.0254660311196846,0.0297208628766903,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-4,0.0485070213228397,0.0323037198842816,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-3,0.042475618197046,0.0279206799272536,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-2,-0.00274194405769231,0.025965093496597,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-1,0,NA,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+0,-0.0107902395873075,0.0264770371296793,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+1,0.0275625233892659,0.0306386084708624,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+2,0.0377061902055272,0.0330403496128314,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+3,0.0256996045359825,0.033376652793104,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+4,0.0120609479928724,0.0326498769533484,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+5,0.0337072545253375,0.0366759632135692,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+6,0.0356757844984074,0.0387113588706899,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+7,0.0151555892413808,0.0401677545907631,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+8,0.0946529343512776,0.042492946371642,"main_all","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-8,-0.371313992273682,0.0586222639554752,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-7,-0.383694292438305,0.0527117629773327,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-6,-0.313088751699365,0.0495508794977529,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-5,-0.213322419393841,0.0448835109641834,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-4,-0.195936861704888,0.0458331687970505,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-3,-0.198231766859837,0.041407244335522,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-2,-0.157212489078822,0.0388895465944785,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-1,0,NA,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+0,0.188748721936631,0.0337164386152859,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+1,-0.0126389967785633,0.0355474571750846,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+2,-0.0502000548922993,0.0408150709689232,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+3,-0.0636832012363698,0.0418038515945585,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+4,-0.0793861022774277,0.0447556954587004,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+5,-0.220986099977778,0.0517604429098393,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+6,-0.232951184675918,0.0579126148321658,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+7,-0.227152229984489,0.058340628715047,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+8,-0.279550263719657,0.0730973442076727,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-8,-0.520289170818386,0.091223111760707,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-7,-0.417110406182923,0.0721830042189296,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-6,-0.305907333097946,0.0693770835595953,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-5,-0.259389542569635,0.0651932007871869,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-4,-0.202132619120559,0.0635428180734249,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-3,-0.217092439356341,0.0584438861067755,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-2,-0.175021799589634,0.0563287316745268,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-1,0,NA,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+0,0.210393979261027,0.0431680893556867,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+1,-0.00997956447432839,0.0518456047235504,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+2,-0.0199431511222481,0.057641885861737,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+3,-0.00471956039352451,0.060293376825694,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+4,-0.00906878510088495,0.062173889391047,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+5,-0.108164126736889,0.0725431435765559,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+6,-0.133994677989882,0.0854283317397886,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+7,-0.0874898214084991,0.085827553901796,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+8,-0.0646215760408374,0.078508931566542,"main_all","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-8,-0.514513409049479,0.0994859680761304,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-7,-0.539775808478036,0.0897798760247571,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-6,-0.464652907732132,0.0834173825451984,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-5,-0.289354691875726,0.0754450394763067,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-4,-0.310467344850935,0.0775065830249471,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-3,-0.288839578449723,0.073621717296061,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-2,-0.229682225609667,0.0705353656309305,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-1,0,NA,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+0,0.439794899141041,0.0540071858406649,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+1,-0.0336255565720958,0.0569037029196401,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+2,-0.103141723716458,0.0643596786888755,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+3,-0.139574312265671,0.0654012299275548,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+4,-0.173232833027646,0.0667869829371458,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+5,-0.420475115816917,0.076267606509337,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+6,-0.412534898082571,0.0862704176173697,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+7,-0.435707812327541,0.0877562565199645,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+8,-0.488946055739588,0.0974650147603961,"main_all","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-8,-0.747183744189948,0.148467041497364,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-7,-0.575586601422266,0.110793608020123,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-6,-0.454378043197385,0.112012876856656,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-5,-0.38718312234451,0.103740532484942,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-4,-0.322087424725846,0.106956089517725,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-3,-0.322291587230239,0.0987746834999217,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-2,-0.234038433155697,0.101206341107494,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-1,0,NA,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+0,0.456443610419731,0.069635282536174,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+1,-0.0758658495719191,0.0831951046092304,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+2,-0.0497398836688588,0.0905506678629113,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+3,-0.0469363061810914,0.0935678160549222,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+4,-0.0517412199313827,0.0952369096046582,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+5,-0.23399617478151,0.108891870932529,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+6,-0.284885567890148,0.130837718905289,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+7,-0.212167046706254,0.140546433254043,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+8,-0.188714689139655,0.105475090587103,"main_all","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-4,-0.0359496739597541,0.0135483990861291,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+-3,-0.0201579753741522,0.0147490632097783,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+-2,-0.030642177836737,0.014428607006263,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+-1,0,NA,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+0,-0.0136324993927617,0.0169951576296333,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+1,-0.0202151959044113,0.0160337535173388,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+2,-0.0243374096149175,0.0162809084188312,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+3,-0.0217613179873321,0.0160384527784899,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+4,-0.0228426692326377,0.0155477840871529,"main_clean","balanced","run_shoe_d","Running shoe",FALSE
+-4,-0.0378070898373815,0.0136023793609184,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+-3,-0.023094471686045,0.0148345093641515,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+-2,-0.0341139838898208,0.0146571131234054,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+-1,0,NA,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+0,-0.0156910975716801,0.0170690248953422,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+1,-0.0212256900688054,0.0161520146105362,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+2,-0.0264673593788241,0.0162810437497006,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+3,-0.024978267683621,0.0160695218105263,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+4,-0.0269907598944701,0.0157168969923898,"main_clean","balanced","run_shoe_d","Running shoe",TRUE
+-4,-0.114747015190299,0.0252279155087609,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+-3,-0.0690675155546421,0.0241139517751753,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+-2,-0.0813687617944358,0.0255069649157214,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+-1,0,NA,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+0,-0.0106944003288429,0.0276337354043611,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+1,-0.0284479456661871,0.0261681342372831,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+2,-0.048267268922479,0.0281750157165052,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+3,-0.0559266456157396,0.0272535465673363,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+4,-0.0417441284729359,0.0250924904033957,"main_clean","balanced","run_any_d","Running-related (keyword)",FALSE
+-4,-0.116142835216087,0.0253038294772607,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+-3,-0.0661643541629936,0.0241343275874184,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+-2,-0.0858338569144558,0.025555439442425,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+-1,0,NA,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+0,-0.0135546540799617,0.0275120315571664,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+1,-0.031911031832295,0.026210047131832,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+2,-0.0551274508015811,0.0282770325679748,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+3,-0.058629316077009,0.0272222960670267,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+4,-0.044191719944089,0.0250785460058284,"main_clean","balanced","run_any_d","Running-related (keyword)",TRUE
+-4,-0.00230516993329721,0.0205581933753621,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+-3,-0.00128921357971637,0.022378584947355,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+-2,0.0192155882737617,0.0221282164819017,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+-1,0,NA,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+0,0.0190112292371219,0.0206854854213024,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+1,0.00602800769791297,0.0189387489559753,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+2,0.00528647633639132,0.0218233868367375,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+3,-0.0106325087348891,0.0211524926162772,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+4,0.0293646419162572,0.023561053377546,"main_clean","balanced","fit_gear_d","Fitness gear",FALSE
+-4,-0.0063598418983733,0.0200991819456877,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+-3,-0.00304319718248908,0.0227661186571995,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+-2,0.0167601521718399,0.0222174432059072,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+-1,0,NA,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+0,0.0164534274860431,0.0208510181834948,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+1,0.00587347581806153,0.0192980863296591,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+2,0.00770160975288844,0.0218314445858895,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+3,-0.011335848573341,0.021622580683305,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+4,0.0299499545924399,0.0237860373707136,"main_clean","balanced","fit_gear_d","Fitness gear",TRUE
+-4,-0.014857485846677,0.0272015315159152,"main_clean","balanced","supp_d","Supplements",FALSE
+-3,-0.0297605145643766,0.0254719068788327,"main_clean","balanced","supp_d","Supplements",FALSE
+-2,-0.0182451747912034,0.0235698364406311,"main_clean","balanced","supp_d","Supplements",FALSE
+-1,0,NA,"main_clean","balanced","supp_d","Supplements",FALSE
+0,0.0142035369294296,0.0242012444227021,"main_clean","balanced","supp_d","Supplements",FALSE
+1,0.0292782272379066,0.0254287272664964,"main_clean","balanced","supp_d","Supplements",FALSE
+2,0.0504381457745558,0.0258373440807012,"main_clean","balanced","supp_d","Supplements",FALSE
+3,0.00995520449916855,0.0263552434101121,"main_clean","balanced","supp_d","Supplements",FALSE
+4,0.00810429551017358,0.0268221411236371,"main_clean","balanced","supp_d","Supplements",FALSE
+-4,-0.0121624118946503,0.0275704194216456,"main_clean","balanced","supp_d","Supplements",TRUE
+-3,-0.0313270946730369,0.025655988874186,"main_clean","balanced","supp_d","Supplements",TRUE
+-2,-0.0138763910814189,0.0239279348791573,"main_clean","balanced","supp_d","Supplements",TRUE
+-1,0,NA,"main_clean","balanced","supp_d","Supplements",TRUE
+0,0.0162358918685338,0.0243490226846269,"main_clean","balanced","supp_d","Supplements",TRUE
+1,0.03210192096967,0.0258946329928786,"main_clean","balanced","supp_d","Supplements",TRUE
+2,0.049506976598926,0.0260988403714446,"main_clean","balanced","supp_d","Supplements",TRUE
+3,0.00679823868909603,0.0269662098329287,"main_clean","balanced","supp_d","Supplements",TRUE
+4,0.0101613705511672,0.0275381536849911,"main_clean","balanced","supp_d","Supplements",TRUE
+-4,-0.0390582668485268,0.021391844879651,"main_clean","balanced","med_d","Medication",FALSE
+-3,-0.0373019468993479,0.0217920521349933,"main_clean","balanced","med_d","Medication",FALSE
+-2,-0.00634564002914744,0.0217737297054522,"main_clean","balanced","med_d","Medication",FALSE
+-1,0,NA,"main_clean","balanced","med_d","Medication",FALSE
+0,0.00148072719119598,0.021335235569927,"main_clean","balanced","med_d","Medication",FALSE
+1,-0.00349162011173185,0.0227567206237779,"main_clean","balanced","med_d","Medication",FALSE
+2,-0.047751116384223,0.0219991938689675,"main_clean","balanced","med_d","Medication",FALSE
+3,-0.00199921526129932,0.0237314047720417,"main_clean","balanced","med_d","Medication",FALSE
+4,-0.0282062181199903,0.0224601240129214,"main_clean","balanced","med_d","Medication",FALSE
+-4,-0.0395041864508182,0.021698589724693,"main_clean","balanced","med_d","Medication",TRUE
+-3,-0.0380050746844394,0.0220449198889299,"main_clean","balanced","med_d","Medication",TRUE
+-2,-0.00778867174475888,0.0220171674955957,"main_clean","balanced","med_d","Medication",TRUE
+-1,0,NA,"main_clean","balanced","med_d","Medication",TRUE
+0,-0.000289325632909352,0.0215375990118826,"main_clean","balanced","med_d","Medication",TRUE
+1,-0.0079019589101164,0.0231406116823787,"main_clean","balanced","med_d","Medication",TRUE
+2,-0.0527907848620807,0.0224152975529816,"main_clean","balanced","med_d","Medication",TRUE
+3,-0.0109773639578803,0.0243674938987728,"main_clean","balanced","med_d","Medication",TRUE
+4,-0.038574329415323,0.0227864408874854,"main_clean","balanced","med_d","Medication",TRUE
+-4,-0.0537616075932811,0.0244362112393666,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+-3,-0.0619102782085537,0.0242255089270842,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+-2,-0.0368640346779769,0.0227540312266249,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+-1,0,NA,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+0,-0.00844411539395751,0.0224477981925355,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+1,-0.0150501672240803,0.0218609694627552,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+2,-0.0179427234169765,0.0236664168378605,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+3,-0.0109466377683526,0.0251530230866111,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+4,-0.00907938005642645,0.0254548970360683,"main_clean","balanced","pet_d","PLACEBO: pet",FALSE
+-4,-0.0563059022087306,0.0246914018909156,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+-3,-0.0640302476230413,0.0244073395191055,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+-2,-0.0377018623424462,0.0229918054463495,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+-1,0,NA,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+0,-0.00476477763454623,0.0225263788464709,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+1,-0.0111589961801323,0.0219976458471029,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+2,-0.0157907930460177,0.0238467532560066,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+3,-0.00714304606254222,0.0253377754832328,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+4,-0.0028546503120135,0.0257926894847329,"main_clean","balanced","pet_d","PLACEBO: pet",TRUE
+-4,-0.0286476336391323,0.029698078357546,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+-3,-0.0133031894022907,0.0283604315895199,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+-2,-0.0414171540143121,0.0301175115749747,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+-1,0,NA,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+0,0.0308570467666897,0.0290051907439768,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+1,-0.00849783262644569,0.0292399725255744,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+2,0.00230750546514452,0.0297839353567713,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+3,0.0260259991405243,0.0313476086401197,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+4,0.0253977410735973,0.0318103678970043,"main_clean","balanced","book_d","PLACEBO: books",FALSE
+-4,-0.0392390506328804,0.0305808657218742,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+-3,-0.018394047696916,0.0287382354389791,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+-2,-0.046659960388664,0.0308251301913772,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+-1,0,NA,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+0,0.0330079881558853,0.0299961208498028,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+1,-0.00494286528431481,0.0296351614981814,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+2,0.0102057861523991,0.0304622748470063,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+3,0.0303337691568948,0.0316523125926734,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+4,0.0325015517700088,0.0323674877301162,"main_clean","balanced","book_d","PLACEBO: books",TRUE
+-4,-0.00949160142747706,0.0239325951188263,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-3,-0.0346616281459614,0.0237018530313715,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-2,0.0108835784084752,0.0233632182963661,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-1,0,NA,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+0,0.0255518861755199,0.0243914919215316,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+1,0.00756712318529176,0.024522689963006,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+2,-0.0100836587507707,0.0236527081198734,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+3,-0.0585050727751724,0.0200416526144423,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+4,-0.0202513966480447,0.0237569261916741,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",FALSE
+-4,-0.0158342114887516,0.024012922488336,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-3,-0.0374589773063907,0.0239551883417357,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-2,0.00855478689593985,0.0233722000438568,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-1,0,NA,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+0,0.0248357739188339,0.0246114293492828,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+1,0.0132581623052941,0.0246398334532329,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+2,-0.00807001431240465,0.0240388878954838,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+3,-0.0529397451816173,0.0203047329001668,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+4,-0.0177604120509861,0.0240191671627663,"main_clean","balanced","giftcard_d","PLACEBO: gift cards",TRUE
+-4,-0.0344128940042226,0.0319827452675857,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-3,-0.0118504885932625,0.0313492849453024,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-2,0.00705680947665403,0.0322937582125694,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-1,0,NA,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+0,0.0423408568599241,0.0339951558258457,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+1,-0.0321462603464061,0.0325227415734867,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+2,-0.00595327067879897,0.0336586393119549,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+3,0.0143810373498253,0.0327009111532838,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+4,-0.00396222977896526,0.0327496586846801,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",FALSE
+-4,-0.0366308070435024,0.0325492533232978,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-3,-0.0112160454205287,0.031652399464685,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-2,0.0098646009692727,0.0328262560221357,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-1,0,NA,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+0,0.0432806310709489,0.03455465362429,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+1,-0.0308746794361174,0.0332475744994903,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+2,-0.00261236054743699,0.0338133220403867,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+3,0.0188222716892017,0.0332587339274715,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+4,-0.00264019772683234,0.033004131654781,"main_clean","balanced","cable_d","PLACEBO: cables/batteries",TRUE
+-4,-0.0135460847144112,0.0234986410905298,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-3,-0.0254619681993984,0.0209964823864736,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-2,-0.00662006502120663,0.0216864467115488,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-1,0,NA,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+0,-0.00644022906896358,0.023916824210939,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+1,0.0101151884307094,0.0248648560243534,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+2,0.0112432503129613,0.0242148591380409,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+3,0.0220766147867192,0.0251127271621147,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+4,-0.0178995160778012,0.0245476108864868,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",FALSE
+-4,-0.0129195892008968,0.0239255468498388,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-3,-0.0255141478306941,0.0212189283954317,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-2,-0.00574263274365243,0.0220002409898055,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-1,0,NA,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+0,-0.00451073112930723,0.0241404202413586,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+1,0.00550390627895611,0.024907567530639,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+2,0.00772713403302239,0.0243995247472443,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+3,0.0204553143708845,0.0253051897891307,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+4,-0.0200838959358934,0.0247202348359238,"main_clean","balanced","cleaning_d","PLACEBO: cleaning",TRUE
+-4,0.0302790026344799,0.023921686322415,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-3,0.0279282898301601,0.0221183587730235,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-2,0.0123339436856561,0.0199733753831939,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-1,0,NA,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+0,0.0363035070346219,0.0221902233944074,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+1,0.0484762990228135,0.0240602236908271,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+2,0.0349465630313335,0.0244573418651662,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+3,0.0385958315427589,0.0235827368291475,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+4,0.0420617608041703,0.0252401439994002,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",FALSE
+-4,0.0315515696130311,0.0240050854613299,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-3,0.0323278800910077,0.0223175796305001,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-2,0.0155929285968769,0.0201201331107995,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-1,0,NA,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+0,0.0380927826978714,0.0222781004417105,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+1,0.0535333557774169,0.0243898152170055,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+2,0.0382432354310266,0.0244860528322942,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+3,0.0375275262667244,0.0237154783932489,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+4,0.0433565972517378,0.0253654258907458,"main_clean","balanced","grocery_d","PLACEBO: grocery/food",TRUE
+-4,-0.093853856295841,0.0482541663686058,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-3,-0.0973933308255598,0.0456594698733611,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-2,-0.0979474164952802,0.0425706277459365,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-1,0,NA,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+0,0.201773660358461,0.0368246023814951,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+1,0.0120609991061367,0.0414174908863351,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+2,-0.0140458069058464,0.0428632652673466,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+3,-0.039819218087754,0.0441994898048653,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+4,-0.0312559909545061,0.0465963355337795,"main_clean","balanced","ln_n","General: ln(1+#purchases)",FALSE
+-4,-0.144711282503647,0.0484490939734042,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-3,-0.140789094982088,0.0452774977314476,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-2,-0.119118009155669,0.0424765939545244,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-1,0,NA,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+0,0.22423576044078,0.036988302001947,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+1,0.0432564730849887,0.042030705249901,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+2,0.0236205324081981,0.0437449309444651,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+3,0.00438501007716588,0.0442910609524453,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+4,0.0286659894592542,0.0465628760902146,"main_clean","balanced","ln_n","General: ln(1+#purchases)",TRUE
+-4,-0.193065457510105,0.0804865753745879,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+-3,-0.163943324011043,0.0808354702395442,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+-2,-0.144401028122812,0.0773605173728337,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+-1,0,NA,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+0,0.519334502594472,0.0580103254735743,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+1,-0.0188962951359612,0.0669038971828012,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+2,-0.0608361762056155,0.07136148580247,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+3,-0.0975875124098386,0.0711370713583736,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+4,-0.0948851233553887,0.071267982386927,"main_clean","balanced","ln_spend","General: ln(1+spend)",FALSE
+-4,-0.269437917684381,0.0799808626585023,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+-3,-0.247341515444637,0.0801389380980517,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+-2,-0.182373096965248,0.0769736687266342,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+-1,0,NA,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+0,0.549423214324101,0.0583511788295718,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+1,0.0260697784640921,0.0675345159866033,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+2,0.000679964542053077,0.0726005193785285,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+3,-0.0231675930067127,0.0708090137154269,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+4,0.0160421572266646,0.070463490077875,"main_clean","balanced","ln_spend","General: ln(1+spend)",TRUE
+-8,-0.0226779838538431,0.0167122882219603,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-7,-0.0373711418641471,0.013446137979149,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-6,-0.0245381041092767,0.0135822856299035,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-5,-0.0191735916323061,0.0146177885208498,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-4,-0.0277084323725348,0.0138174890531236,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-3,-0.0204500863062252,0.0146022642853113,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-2,-0.0292302208628471,0.0132823101937554,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-1,0,NA,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+0,-0.0106639093760994,0.016043529248159,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+1,-0.0196953109902989,0.0148714853173514,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+2,-0.00516497070298638,0.0167062191251471,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+3,-0.0166597516741386,0.0153607920272603,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+4,-0.0167342733413831,0.0143966407400334,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+5,-0.0129374999248012,0.0165169171947296,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+6,-0.0147621515037658,0.0170503163383553,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+7,0.0041400496344506,0.0198938133689657,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+8,-0.0263847869617033,0.0186907079755545,"main_clean","unbalanced","run_shoe_d","Running shoe",FALSE
+-8,-0.0466367400941053,0.026920958517797,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-7,-0.0612493602210568,0.0235075055006077,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-6,-0.0377635500552076,0.0278321611677852,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-5,-0.0408311037272261,0.0266450824993175,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-4,-0.0467546688507306,0.0273538421360055,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-3,-0.0339333178370255,0.027628835618393,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-2,-0.0523095151948037,0.0239060248746981,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-1,0,NA,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+0,-0.0280757062213187,0.0286688065868682,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+1,-0.0367739737008057,0.0277797901933059,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+2,-0.0241029058694179,0.0277346652905689,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+3,-0.0426537097253801,0.0278711086683748,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+4,-0.0265000480776072,0.0258864482504877,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+5,-0.0384070545089387,0.03284671806585,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+6,-0.0364676563014466,0.0344044696824937,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+7,-0.0326517916383319,0.036776904273539,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+8,-0.0689757881838467,0.044774513013663,"main_clean","unbalanced","run_shoe_d","Running shoe",TRUE
+-8,-0.0626646001004256,0.0293396407406604,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-7,-0.120963536455863,0.0259823638989328,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-6,-0.0639880301584781,0.0262299725835764,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-5,-0.105972473190064,0.0242603261683366,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-4,-0.0982103497839715,0.0247918504419002,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-3,-0.0735967869253894,0.024231664263973,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-2,-0.0725513362692256,0.0253553065949986,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-1,0,NA,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+0,-0.0133656405130275,0.0270836372475797,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+1,-0.0174827043584556,0.0266931298960577,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+2,-0.0325188979667468,0.0284068367790851,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+3,-0.0295559477890497,0.0273637057635747,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+4,-0.0431129277711568,0.0251821509747026,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+5,-0.065057104493799,0.028196142427233,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+6,-0.0711553236962029,0.0300728490819552,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+7,-0.0160622224190894,0.0322708609371082,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+8,-0.0600700546847577,0.0361662254703305,"main_clean","unbalanced","run_any_d","Running-related (keyword)",FALSE
+-8,-0.0695562433829268,0.0455050958845159,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-7,-0.14381303846591,0.0404454390786091,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-6,-0.0484116540238176,0.0450602968806725,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-5,-0.121133711603557,0.042149093981526,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-4,-0.102947960625735,0.0441782092839894,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-3,-0.0517081305079472,0.0422122774463165,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-2,-0.0391930171248012,0.0440354402643388,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-1,0,NA,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+0,-0.035892650331208,0.0471247975806277,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+1,-0.0534622577232639,0.0431101818590718,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+2,-0.0303623166660538,0.0510767596605646,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+3,-0.0525885338385905,0.0447512463337588,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+4,-0.0722261162412978,0.0398311994807241,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+5,-0.0935978185350785,0.0499736457914772,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+6,-0.0780918539992473,0.0569257585875462,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+7,-0.0848768972079401,0.0544393305151939,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+8,-0.0286216320905443,0.0867903350884814,"main_clean","unbalanced","run_any_d","Running-related (keyword)",TRUE
+-8,-0.0275527491999572,0.0255591202555477,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-7,-0.076895532878177,0.0204374054417657,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-6,-0.0335408843866499,0.0214657431634932,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-5,-0.0410180521003538,0.0216310503702246,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-4,-0.0291313246157736,0.0216651174842554,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-3,-0.0493240369918096,0.0225209191910245,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-2,-0.0128306468272275,0.0221975837551701,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-1,0,NA,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+0,-0.00451142923842733,0.0226654361371205,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+1,-0.0139177203576655,0.019977431365266,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+2,-0.0193383799730545,0.0225096244488808,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+3,-0.027631509905613,0.0217304284994228,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+4,-0.0010452565730456,0.0243998296050107,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+5,-0.035965842495298,0.0219341096317518,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+6,-0.0234972294960922,0.0235515950477292,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+7,-0.0332111291209087,0.0261367489889886,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+8,-0.00787008557261868,0.0306336257610359,"main_clean","unbalanced","fit_gear_d","Fitness gear",FALSE
+-8,-0.047895280758653,0.0387248072174762,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-7,-0.0758651276311133,0.0356270452547237,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-6,-0.0292634364138166,0.0344487767253088,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-5,-0.0733117563651359,0.0369947255161309,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-4,-0.0496805940723598,0.0358264749424375,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-3,-0.0591790735654049,0.0405944506463225,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-2,-0.0104709786979271,0.0386789822348233,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-1,0,NA,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+0,-0.0387621679384824,0.0400357661220473,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+1,-0.0160289911613186,0.0366708909813745,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+2,-0.0753571021540486,0.0390506624874953,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+3,-0.0819266976277344,0.033572956438454,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+4,-0.043110191132721,0.0416211957737509,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+5,-0.0811696417557242,0.0351113636820833,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+6,-0.0300829418175342,0.0443546831397546,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+7,-0.0166966345941568,0.0445971744785153,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+8,0.0204026663037758,0.0540277662653898,"main_clean","unbalanced","fit_gear_d","Fitness gear",TRUE
+-8,-0.0578400643353174,0.0315754034609612,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-7,-0.0570465991269433,0.027356327452904,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-6,-0.0924131253586747,0.0261077196799046,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-5,-0.0334945683385489,0.0268283555277284,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-4,-0.0332363534615328,0.0270295926914173,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-3,-0.0414813988752349,0.0256993729851593,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-2,-0.0268945026516043,0.0232851679646413,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-1,0,NA,"main_clean","unbalanced","supp_d","Supplements",FALSE
+0,0.025096149996885,0.0245688353889315,"main_clean","unbalanced","supp_d","Supplements",FALSE
+1,0.0258311984580151,0.0244495528489825,"main_clean","unbalanced","supp_d","Supplements",FALSE
+2,0.0425596205753119,0.0251818467605629,"main_clean","unbalanced","supp_d","Supplements",FALSE
+3,0.0194601567838345,0.0265478644852004,"main_clean","unbalanced","supp_d","Supplements",FALSE
+4,0.00413460538079373,0.026256677443406,"main_clean","unbalanced","supp_d","Supplements",FALSE
+5,0.0201220349559219,0.0290615879607171,"main_clean","unbalanced","supp_d","Supplements",FALSE
+6,0.0318535519012549,0.0301182464286208,"main_clean","unbalanced","supp_d","Supplements",FALSE
+7,0.0622617875409928,0.0351506283464283,"main_clean","unbalanced","supp_d","Supplements",FALSE
+8,-0.0138101418564304,0.0398955489377259,"main_clean","unbalanced","supp_d","Supplements",FALSE
+-8,-0.0647941546365039,0.0462921347678588,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-7,-0.037198956825023,0.0456965555605501,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-6,-0.0611369716745462,0.0442471628414848,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-5,0.0185880171334321,0.050252064356332,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-4,-0.010255598130445,0.04858283948113,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-3,-0.0340525368160142,0.045853060949217,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-2,-0.0515518984937659,0.0366523116333514,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-1,0,NA,"main_clean","unbalanced","supp_d","Supplements",TRUE
+0,0.0229447996955979,0.0425391492171039,"main_clean","unbalanced","supp_d","Supplements",TRUE
+1,0.07555665247408,0.0402246087973315,"main_clean","unbalanced","supp_d","Supplements",TRUE
+2,0.0517180168965877,0.0462361145251537,"main_clean","unbalanced","supp_d","Supplements",TRUE
+3,0.0359523168843323,0.0461946950762287,"main_clean","unbalanced","supp_d","Supplements",TRUE
+4,0.0255748284978544,0.0471913096980151,"main_clean","unbalanced","supp_d","Supplements",TRUE
+5,0.0421623844476121,0.0483182211609369,"main_clean","unbalanced","supp_d","Supplements",TRUE
+6,0.0286660243624504,0.0504734240038172,"main_clean","unbalanced","supp_d","Supplements",TRUE
+7,0.00769646920496814,0.061290666606328,"main_clean","unbalanced","supp_d","Supplements",TRUE
+8,0.0315408386839813,0.0819525149391868,"main_clean","unbalanced","supp_d","Supplements",TRUE
+-8,-0.0583181983715059,0.0260664542837897,"main_clean","unbalanced","med_d","Medication",FALSE
+-7,-0.0628802058128042,0.0230894904370599,"main_clean","unbalanced","med_d","Medication",FALSE
+-6,-0.0470150874898327,0.020367759381473,"main_clean","unbalanced","med_d","Medication",FALSE
+-5,-0.0674317182854305,0.0215431081280448,"main_clean","unbalanced","med_d","Medication",FALSE
+-4,-0.0537236901190071,0.0212323346508475,"main_clean","unbalanced","med_d","Medication",FALSE
+-3,-0.0619802139869683,0.0215448831537318,"main_clean","unbalanced","med_d","Medication",FALSE
+-2,-0.0178217831800337,0.022143004510057,"main_clean","unbalanced","med_d","Medication",FALSE
+-1,0,NA,"main_clean","unbalanced","med_d","Medication",FALSE
+0,-0.00906771838808412,0.0211088377646276,"main_clean","unbalanced","med_d","Medication",FALSE
+1,-0.0181013114392425,0.0227149054291775,"main_clean","unbalanced","med_d","Medication",FALSE
+2,-0.043951044385595,0.0229640428539482,"main_clean","unbalanced","med_d","Medication",FALSE
+3,-0.0126499368522306,0.0233331389000034,"main_clean","unbalanced","med_d","Medication",FALSE
+4,-0.0439265224631572,0.0219782788873901,"main_clean","unbalanced","med_d","Medication",FALSE
+5,-0.0135987372205815,0.0246028078646266,"main_clean","unbalanced","med_d","Medication",FALSE
+6,-0.0391934349038325,0.0287391305442205,"main_clean","unbalanced","med_d","Medication",FALSE
+7,0.000369059615940793,0.0304074216925604,"main_clean","unbalanced","med_d","Medication",FALSE
+8,-0.0289313060592342,0.0326983388545128,"main_clean","unbalanced","med_d","Medication",FALSE
+-8,-0.0683097145311705,0.0373361361616323,"main_clean","unbalanced","med_d","Medication",TRUE
+-7,-0.0644939826192529,0.0396008825612606,"main_clean","unbalanced","med_d","Medication",TRUE
+-6,-0.0559716066029531,0.0385830298174962,"main_clean","unbalanced","med_d","Medication",TRUE
+-5,-0.078639801385184,0.035949102316221,"main_clean","unbalanced","med_d","Medication",TRUE
+-4,-0.0508583195287426,0.0346494461480495,"main_clean","unbalanced","med_d","Medication",TRUE
+-3,-0.0629166425491262,0.0389237500436551,"main_clean","unbalanced","med_d","Medication",TRUE
+-2,-0.0578610838402497,0.038937921993482,"main_clean","unbalanced","med_d","Medication",TRUE
+-1,0,NA,"main_clean","unbalanced","med_d","Medication",TRUE
+0,-0.026905298240789,0.0338507598837639,"main_clean","unbalanced","med_d","Medication",TRUE
+1,-0.023412832759111,0.0405315232673815,"main_clean","unbalanced","med_d","Medication",TRUE
+2,-0.0452993960460278,0.0415844318104115,"main_clean","unbalanced","med_d","Medication",TRUE
+3,-0.0377311520965837,0.0392380687492428,"main_clean","unbalanced","med_d","Medication",TRUE
+4,-0.021854508290355,0.040006763457027,"main_clean","unbalanced","med_d","Medication",TRUE
+5,0.0111069944050186,0.0431698871257788,"main_clean","unbalanced","med_d","Medication",TRUE
+6,-0.0495118865898605,0.0485737378018209,"main_clean","unbalanced","med_d","Medication",TRUE
+7,0.0555557950496699,0.0526666761500739,"main_clean","unbalanced","med_d","Medication",TRUE
+8,0.0396256381913155,0.0595166380021681,"main_clean","unbalanced","med_d","Medication",TRUE
+-8,-0.0842498827707858,0.0300627556527457,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-7,-0.0818085649314686,0.027185738707642,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-6,-0.0916108406248145,0.0244837645776158,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-5,-0.0548355335822708,0.0243682634674997,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-4,-0.0653194904791562,0.0242110635808874,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-3,-0.0720417614773743,0.0234064673691139,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-2,-0.0462094650625092,0.0230003266190533,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-1,0,NA,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+0,-0.0129555964343599,0.0230688101617506,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+1,-0.00761502437267358,0.0219227519315652,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+2,-0.0300924281441868,0.0244409617769323,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+3,-0.0277170811155332,0.0249683774102647,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+4,-0.041088287733683,0.0246226753213712,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+5,-0.045288242164408,0.0285788631183865,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+6,-0.0576026630848175,0.0302493205513674,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+7,-0.0562841749551729,0.0323808883938636,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+8,-0.0575687062973124,0.0350427915618418,"main_clean","unbalanced","pet_d","PLACEBO: pet",FALSE
+-8,-0.0946817212555177,0.0446620670480594,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-7,-0.100353631413103,0.0434061810205029,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-6,-0.0825573492403517,0.0429579318727772,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-5,-0.0697911762345383,0.0443631893832506,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-4,-0.0619693600862905,0.0404674127775795,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-3,-0.0612681921615867,0.0361946071076074,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-2,0.00976669879720119,0.0391633629534274,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-1,0,NA,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+0,-0.00408714419227046,0.0407997534865817,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+1,-0.0165852030135395,0.0329378061867096,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+2,-0.0657047649288294,0.0444105457687461,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+3,-0.0206365530860147,0.0439002838883965,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+4,-0.0398394490627861,0.0452048410281987,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+5,-0.0132773336256502,0.0497667665300831,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+6,-0.0359111016268481,0.0572901261734717,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+7,-0.0295610948817549,0.0487512347835324,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+8,-0.0142264920744662,0.0809018170675471,"main_clean","unbalanced","pet_d","PLACEBO: pet",TRUE
+-8,-0.0547650210127523,0.0358431189451032,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-7,-0.0720471606174804,0.0309485054528603,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-6,-0.0484359145683775,0.0303448259147347,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-5,-0.0593469396885427,0.0305038041079574,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-4,-0.0415018004496453,0.0290904598117279,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-3,-0.0474330435226744,0.0272478501685153,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-2,-0.0561003446784193,0.0281394610804138,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-1,0,NA,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+0,0.0469458030158671,0.0282998368938922,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+1,-0.00134008996054632,0.0281169278193422,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+2,-0.0298773655545597,0.0285495421676578,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+3,-0.0100478694215095,0.0299576278710719,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+4,0.00878506893969115,0.030101974122485,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+5,-0.0383369567594299,0.0317077630172019,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+6,-0.062034996663138,0.0330284706353648,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+7,-0.0649656022679064,0.0372599237453208,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+8,0.0232762289127493,0.0427722519333204,"main_clean","unbalanced","book_d","PLACEBO: books",FALSE
+-8,-0.0876836620936997,0.0473377990840949,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-7,-0.0606103786283135,0.0453547116543197,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-6,-0.0664325050006564,0.0479632065548627,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-5,-0.0705651685916056,0.0465772352341738,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-4,-0.00208681313374349,0.0445226076953658,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-3,-0.0227271938539111,0.0460902816718167,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-2,-0.0191926780314898,0.0453999555909603,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-1,0,NA,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+0,0.103887441915993,0.0442505841706455,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+1,0.0700383491369936,0.0449043785163891,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+2,-0.0158096663845806,0.0444660703496698,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+3,0.00152527712415587,0.0473504660734672,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+4,0.00217405893896119,0.0493822874065689,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+5,-0.0560884943538277,0.0519625899671488,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+6,0.0105301718292283,0.0604613639465507,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+7,0.0203403401008756,0.0528590774831251,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+8,0.139994936968118,0.0741089447460297,"main_clean","unbalanced","book_d","PLACEBO: books",TRUE
+-8,-0.0085173298178448,0.0270358336899884,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-7,-0.0502376705166761,0.022602114819964,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-6,-0.00979376848052898,0.0232302257538507,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-5,-0.0388333119599068,0.0200818873384112,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-4,-0.0100524860708135,0.0237367117619246,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-3,-0.0319210098368348,0.0234546544697925,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-2,0.00921141627365045,0.0226791583804871,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-1,0,NA,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+0,0.0363500729044046,0.0232034787134002,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+1,0.0061013272024406,0.0232211824513186,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+2,-0.00921475190889613,0.0228896547143264,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+3,-0.0566891317473652,0.0190002002158194,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+4,-0.00677827752278543,0.0226460179488537,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+5,-0.0248084419859079,0.0237963279816913,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+6,-0.0377454114357958,0.0244061158810983,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+7,-0.0626478157051173,0.0257217364137717,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+8,-0.0564172736679456,0.0288381918113274,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",FALSE
+-8,0.00111568026851722,0.0375242914274641,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-7,-0.0470861641760816,0.0337160159643353,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-6,0.0327080916537981,0.0367488428896563,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-5,0.0112614125014686,0.0333200037565778,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-4,-0.0269417326338816,0.0327893168056396,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-3,0.0391148826752949,0.040724906046014,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-2,0.0575790424667971,0.035774068503433,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-1,0,NA,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+0,0.0455656841675058,0.0357934849736823,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+1,0.0623468285566301,0.0380568073446786,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+2,0.0744336173553579,0.0408425794886797,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+3,0.0176156737760894,0.0314317560148074,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+4,0.0352517945605357,0.0392219693961795,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+5,0.043919875737198,0.0421308746771108,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+6,0.0138185273257556,0.0471011856879146,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+7,-0.0346978239191669,0.0337774772752952,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+8,-0.0236634110821147,0.0617580096404911,"main_clean","unbalanced","giftcard_d","PLACEBO: gift cards",TRUE
+-8,-0.127288424717751,0.0338695902851597,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-7,-0.0935895007316875,0.0305657967518184,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-6,-0.0868847238593248,0.0306286005992451,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-5,-0.0612929795740898,0.0296173904782276,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-4,-0.0309880001244111,0.031732714575266,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-3,-0.0220857371368801,0.0311732133258465,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-2,0.00498053299899636,0.0318740918061466,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-1,0,NA,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+0,0.0502481233835215,0.0327383656133136,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+1,-0.0229755564078924,0.0309109074040927,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+2,0.00587867499067822,0.0334008716965984,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+3,0.0151309291333873,0.0326968407643253,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+4,-0.000232238796906817,0.0326079728045279,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+5,-0.0476682100956011,0.031858561732148,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+6,0.0208893023007416,0.0349919297550515,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+7,-0.044430069515192,0.0370719638697898,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+8,-0.0558100260333181,0.0414409537344026,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",FALSE
+-8,-0.144251432737223,0.0527001369341443,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-7,-0.11646755959949,0.0525667287926288,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-6,-0.139120496057475,0.0529175719827534,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-5,-0.101116307847777,0.0528903428774187,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-4,-0.0336246206067056,0.0532501230504561,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-3,-0.0856530253722638,0.0532024447146627,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-2,0.0131185940838527,0.0510798137627736,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-1,0,NA,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+0,0.00508909929126717,0.056580873344214,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+1,-0.013701604647291,0.056251934575074,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+2,-0.0545897237036176,0.0537870319981212,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+3,0.0120189963137705,0.055736046323238,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+4,-0.0730633628246483,0.0580489360412848,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+5,-0.100175217922838,0.055166047046117,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+6,-0.0507552685633736,0.0628420085291743,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+7,-0.137516697100377,0.0647929970489872,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+8,-0.174626726625478,0.0863910953213059,"main_clean","unbalanced","cable_d","PLACEBO: cables/batteries",TRUE
+-8,-0.0062308772514066,0.0235273330962005,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-7,-0.0518485282194496,0.022998409317878,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-6,-0.00817784508968686,0.0232322250250144,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-5,-0.0490760756871885,0.0219710733540627,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-4,-0.0295178437779368,0.0222801157379062,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-3,-0.0322978935445951,0.0214570663403772,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-2,-0.0230925011565596,0.0213752785232519,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-1,0,NA,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+0,-0.00491234984167255,0.0234855931366504,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+1,0.00120036527787584,0.0238131197805112,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+2,0.00889646482294814,0.0234796562977261,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+3,0.0240204539135711,0.0241884146550907,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+4,-0.00625874891674306,0.0239106543743429,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+5,-0.0210529604724887,0.0252711254844368,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+6,0.00499409787300342,0.025957485848277,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+7,0.0245267839697712,0.0313067435770035,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+8,-0.0175867022868804,0.0320673227955138,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",FALSE
+-8,-0.0502795355674437,0.0356556624139962,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-7,-0.074476777644033,0.0375738914717976,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-6,-0.0574405976554034,0.0376544825234231,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-5,-0.0665677331488451,0.0388368088201918,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-4,-0.0599347120040638,0.0388290903526457,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-3,-0.0496404167825151,0.0394524553945817,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-2,-0.0280164307124916,0.0407906288334507,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-1,0,NA,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+0,-0.069727129087955,0.0401603494640991,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+1,-0.0200268389175135,0.0432017550936804,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+2,-0.0378004249468326,0.0411106811597854,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+3,0.00045720724018135,0.0412622941545518,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+4,-0.0793049043259628,0.0416816923644659,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+5,-0.071246954871816,0.041030067557547,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+6,0.00271941171816416,0.0545537827255952,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+7,-0.0513942542027066,0.0487160678797348,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+8,0.0699700352962047,0.080173144964261,"main_clean","unbalanced","cleaning_d","PLACEBO: cleaning",TRUE
+-8,-0.0147342240729035,0.0273880964243773,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-7,0.025693722696848,0.0247064997367805,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-6,0.010890814428379,0.0220944945392027,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-5,0.040239383908934,0.0229739610088066,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-4,0.0468465013647473,0.0232353738787217,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-3,0.030578823456639,0.0214682671130767,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-2,0.0221641317892373,0.0194509976640529,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-1,0,NA,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+0,0.0392063209502695,0.0212184805106643,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+1,0.0470459175413086,0.0233479699708957,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+2,0.0330882632274879,0.0235684833541791,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+3,0.0434774508535439,0.0233092602054442,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+4,0.0443515360529099,0.0236878417531257,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+5,0.0582581931214295,0.026094614406326,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+6,0.0253557762277329,0.0247574848403161,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+7,0.00344835304695951,0.0292444515207789,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+8,0.0635174723660128,0.032303952442985,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",FALSE
+-8,-0.0195222497247438,0.0421176826929292,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-7,0.0486066830910356,0.0408461773001522,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-6,0.0216258323227432,0.0353576660502266,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-5,0.0490605007478445,0.0334631713216651,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-4,0.040707519790538,0.0377222461757808,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-3,0.0510294714718525,0.0340506360168407,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-2,0.0278690968899721,0.0306164515551032,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-1,0,NA,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+0,0.0433331440563576,0.0333520729048951,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+1,0.0644788579149113,0.0402248885738738,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+2,0.0463875043267808,0.0398887268099603,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+3,0.0297612865327788,0.0400071608065912,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+4,0.0487774522071498,0.0410542237094154,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+5,0.0405982537364869,0.0413961275102169,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+6,0.03946971821736,0.0419372909090444,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+7,0.0726854653996537,0.0477054103207917,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+8,0.153897667322804,0.0686437212988596,"main_clean","unbalanced","grocery_d","PLACEBO: grocery/food",TRUE
+-8,-0.345691503244551,0.067700992501953,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-7,-0.359771444066307,0.062684394376959,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-6,-0.324328853453246,0.0556883245482776,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-5,-0.186336396710013,0.0503325461064973,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-4,-0.192301494370321,0.0510861490600119,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-3,-0.196010254908375,0.0472169659447453,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-2,-0.183118632473906,0.0452213816878847,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-1,0,NA,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+0,0.192381675907917,0.0371272988468805,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+1,-0.0242006892195401,0.0401325345533664,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+2,-0.0787860633631084,0.0452050323634998,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+3,-0.0711377690077671,0.0444915145565184,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+4,-0.0991466923965746,0.0492402555313469,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+5,-0.199232463751066,0.0563286803409102,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+6,-0.210930389896664,0.062285601492819,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+7,-0.235517078339415,0.0646226950636441,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+8,-0.32020618375565,0.0808352378797559,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",FALSE
+-8,-0.477148453579612,0.0966556713523933,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-7,-0.306837556230194,0.0963127278861365,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-6,-0.274294816353923,0.0880334526508724,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-5,-0.206331071220015,0.0739577786095525,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-4,-0.089053096802915,0.0758009482643867,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-3,-0.0865001956465528,0.0723277428344465,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-2,-0.12494617969956,0.0775654486479841,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-1,0,NA,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+0,0.207207358858701,0.0587450636530066,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+1,0.0366829052878249,0.0640475550702735,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+2,0.0109138898633466,0.0789213674834306,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+3,-0.0275813080025603,0.0827146332213782,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+4,-0.0202338491046793,0.083528954468914,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+5,-0.113747385233186,0.0957763641119701,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+6,-0.0946186597930565,0.100232965230963,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+7,-0.169699492961196,0.108065548734798,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+8,-0.0734066086921563,0.116697277700051,"main_clean","unbalanced","ln_n","General: ln(1+#purchases)",TRUE
+-8,-0.523326259014167,0.117592079457596,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-7,-0.521538910235467,0.107903992432871,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-6,-0.480709216222338,0.0968666701766701,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-5,-0.25369263524945,0.0864707466653867,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-4,-0.33445851606916,0.0889132063793295,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-3,-0.301006909173818,0.0847600835990538,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-2,-0.279701957887638,0.0836740553907942,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-1,0,NA,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+0,0.495968393971396,0.0596613744973327,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+1,-0.0641666184736968,0.0638488925794555,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+2,-0.149215821218046,0.0751262365016913,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+3,-0.132360712693943,0.0739985871504486,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+4,-0.201180572933543,0.0748323345299362,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+5,-0.427673802814981,0.0851835097261915,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+6,-0.384768855336992,0.0952435995547734,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+7,-0.452356270129195,0.0973409240801442,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+8,-0.578073049043011,0.107731479142753,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",FALSE
+-8,-0.7329026420969,0.164914960465905,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-7,-0.408893017479849,0.160156470227215,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-6,-0.302344091379007,0.142554007948808,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-5,-0.283882136002208,0.135792015320343,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-4,-0.155190804640025,0.125994714306166,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-3,-0.128731334896979,0.120189364961152,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-2,-0.200996395139912,0.142164356290853,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+-1,0,NA,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+0,0.636705873286375,0.110201522049518,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+1,0.0736153879031222,0.111842332917235,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+2,0.0356518155800522,0.131292359490193,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+3,-0.0382767360623861,0.146689476688287,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+4,0.0248395053237566,0.125935899629053,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+5,-0.190865111348513,0.141100544299516,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+6,-0.128343418286251,0.146073674695889,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+7,-0.230260561884784,0.165510406289396,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE
+8,-0.244832163359813,0.14754967893448,"main_clean","unbalanced","ln_spend","General: ln(1+spend)",TRUE

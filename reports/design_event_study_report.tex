@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[htt]{hyphenat}
+\sloppy
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black]{hyperref}
+
+\title{Wearables and Habits: Staggered DiD, Placebos and Shoe Bundling\\\large Issue \#7}
+\date{4 October 2026}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Summary}
+Exploratory staggered DiD (Callaway--Sant'Anna, never-treated controls, no covariates, user-quarter panel, outcome = any purchase in the quarter) of first wearable purchase on running-related and other purchases. All event studies use the universal base period, so the \textbf{reference period is $t=-1$} (not $t=0$); the coefficient at $-1$ is zero by construction.
+\begin{itemize}[nosep]
+\item \textbf{Pre-trends are strong, so the reduced form is not credible as is.} Treated users purchase \emph{less} than controls 2--8 quarters before adoption, relative to $t=-1$, in almost every outcome (Figure~\ref{fig:main}), including the placebos (Figure~\ref{fig:plac}). Treated users' purchasing is ramping up into adoption (consistent with the rising pre-adoption purchasing noted in \#5).
+\item \textbf{No detectable post-adoption increase in running purchases.} Post ATT (quarters 1--8) for running shoes is $-0.016$ (0.009), running-related $-0.033$ (0.016), fitness gear $-0.020$ (0.014), supplements $+0.022$ (0.017), medication $-0.005$ (0.014). Negative post estimates relative to $t=-1$ mostly reflect the $t=-1$ peak in a ramp-up, not a causal drop.
+\item \textbf{Placebos mostly small, but the general-intensity outcomes are not.} Pet, books, gift cards, cables, cleaning, grocery and (conditional) shoe price are all within about 2 SE of zero post, yet show the same pre-trend as the main outcomes. Total purchases $\ln(1+n)$ and spend fall post ($-0.11$, $-0.20$) after a pronounced run-up ($t=0$ spike of $+0.20$ in $\ln(1+n)$ from the device order itself).
+\item \textbf{Bundling is thin.} Only 30 of the 570 adopters buy a running shoe within $\pm1$ month of the device (24 of 447 clean). Excluding the bundled shoe, no outcome differs significantly between bundlers and non-bundlers except fitness gear (difference $-0.144$, SE 0.072, borderline), and the bundler estimates are very imprecise.
+\item \textbf{Running shoes as the treatment:} buying running shoes does not predict a later wearable purchase ($+0.001$, SE 0.007), but does predict later non-shoe running-related purchases ($+0.029$, SE 0.014; $+0.041$ among users who never buy a wearable), with the caveat of pre-trends. Repeat shoe purchase is $+0.082$ (mechanical replacement).
+\end{itemize}
+
+\section{Design}
+\begin{itemize}[nosep]
+\item \textbf{Panel:} user-quarter over each user's observed window, truncated at 2023-03 (usable window from \#5); zeros filled; unbalanced panel. Built by \texttt{code/scripts/prep\_design\_panel.py}; estimated by \texttt{code/scripts/design\_did.R}; figures/tables by \texttt{design\_did\_figs.py}.
+\item \textbf{Treated:} first non-kids wearable (Category \texttt{WEARABLE\_COMPUTER}/\texttt{BIOMETRIC\_MONITOR}) with $\geq$12 months pre and post (570 users); ``clean'' variant (447 users) also requires price $\geq$\$40, quantity 1, not an accessory; non-clean adopters are dropped from the clean sample. \textbf{Controls:} users who never buy a wearable (about 4{,}100). Adopters with $<$12m pre/post are dropped.
+\item \textbf{Estimator:} \texttt{did::att\_gt}, \texttt{est\_method="reg"}, no covariates, universal base period, analytic SEs clustered by user, event window $-8$ to $+8$ quarters. ``Post ATT'' is the average of $e=1,\dots,8$ (excludes $e=0$, which contains the device purchase itself).
+\item \textbf{Outcomes:} indicators for any purchase in the quarter: running shoe, running-related keyword, fitness gear, supplements, medication (definitions from \#5). \textbf{Placebos:} pet, books, gift cards, cables/chargers/batteries, cleaning agents, grocery/food; $\ln$ average price of shoes (SHOES category, only quarters with a shoe purchase); and general intensity $\ln(1+n)$ and $\ln(1+\mathrm{spend})$.
+\item \textbf{Bundling:} bundler = a running shoe bought within $\pm1$ month of the first wearable. For adopters the bundled shoe is removed from the shoe and running-related outcomes.
+\item \textbf{Shoe as treatment:} first running shoe (604 users with $\geq$12m pre and post) vs.\ never-running-shoe users, outcomes wearable, non-shoe running-related, fitness gear, supplements, repeat shoe, with a version dropping all wearable adopters.
+\end{itemize}
+
+\section{Main outcomes and placebos}
+\begin{center}\small\input{../code/analysis/outputs/design_tab_main_all.tex}\end{center}
+The pre-test column is the joint Wald test of the pre-period ATTs from \texttt{did}; it is $0.000$ almost everywhere and n/a when the covariance matrix is singular, so rely on the plots. The clean-sample estimates are similar (Table in \texttt{design\_tab\_main\_clean.tex}; running-related $-0.027$ (0.018), shoe $-0.011$ (0.011)).
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_main.png}
+\caption{Event studies, main outcomes (570 adopters). 95\% CIs; reference $t=-1$.}\label{fig:main}\end{figure}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_placebo.png}
+\caption{Event studies, placebo and general-intensity outcomes. Placebos show the same pre-trend as the main outcomes.}\label{fig:plac}\end{figure}
+
+\section{Running-shoe bundling}
+\begin{center}\small\input{../code/analysis/outputs/design_tab_bundle.tex}\end{center}
+Post ATT (SE); the difference SE assumes independence (shared controls make it slightly conservative or not, unchecked). Pre-test for bundlers is not available (30 users).
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_bundle.png}
+\caption{Bundlers (red, 30) vs non-bundlers (blue, 540), bundled shoe excluded from outcomes.}\label{fig:bundle}\end{figure}
+
+\section{Running shoes as the treatment}
+\begin{center}\small\input{../code/analysis/outputs/design_tab_shoe_treat.tex}\end{center}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_shoe_treat.png}
+\caption{Event studies with the first running-shoe purchase as treatment.}\label{fig:shoe}\end{figure}
+Dropping wearable adopters (399 treated): non-shoe running-related $+0.041$ (0.015), repeat shoe $+0.074$ (0.006); the wearable outcome is undefined there by construction.
+
+\section{Hypotheses for the common pre-trend (untested)}
+The pre-trend appears in running outcomes, supplements, medication and all placebos alike, and total purchases rise by roughly $0.35$ log points from $t=-8$ to $t=-1$. That pattern points to a latent factor driving overall purchasing intensity rather than anything specific to running. Candidate explanations, with what each predicts and how it could be checked with the current data:
+\begin{enumerate}[nosep]
+\item \textbf{Conditioning on activity (selection on the observation window).} Windows run from a user's first to last purchase, and adopters must have $\geq$12 months after the device. Treated users therefore are active at $t=0$ and stay active, while the never-treated pool includes dormant or short-window users. This mechanically produces a ramp-up into adoption and no matching ramp in controls. \emph{Check:} restrict controls to users with comparable window length and activity, or match on pre-period purchase counts.
+\item \textbf{Account/data maturity.} Early quarters after a user's first purchase may reflect a newly active or newly shared account, with purchasing growing over time. \emph{Check:} plot outcomes in time since the user's first purchase for adopters and controls.
+\item \textbf{Latent health or fitness intent (anticipation).} A user who starts a fitness or health routine raises supplements, gear, medication and later the device, so purchases rise before the device. This is the plan's main threat; it would show up in health-related outcomes but should be weaker in placebos, which is not what we see, so it is unlikely to be the whole story.
+\item \textbf{Life-cycle or life-event shocks.} Moves, a new job, a new baby, a household change or New Year resolutions raise purchases across all categories and also raise the odds of buying a device. \emph{Check:} the survey has household size and demographics; look at event studies by household type, and at adoption by quarter-of-year.
+\item \textbf{Income and tech affinity.} Adopters have higher income and larger households (\#5), so they may be on a steeper growth path in Amazon spending. \emph{Check:} covariate-adjusted or doubly-robust estimation, or income-specific trends.
+\item \textbf{Gifting and seasonality.} Devices are often bought or gifted around holidays, and holiday-heavy shoppers differ in seasonal intensity. Calendar time is handled by the control group, but heterogeneity in seasonal intensity is not. \emph{Check:} adoption timing by quarter and drop Q4 adopters.
+\item \textbf{Measurement.} Missing Category/Title falls from 10\% in 2018 to 1\% in 2022, so keyword outcomes are undercounted early; this matters if adopters are observed later in calendar time than controls. The $t=0$ spike in $\ln(1+n)$ also reflects the device order itself.
+\end{enumerate}
+Hypotheses 1 and 2 are mechanical and would need to be ruled out before reading any of the post-adoption estimates as behavioral. Because placebo categories move with the main outcomes, a ``purchasing intensity'' control (or outcomes expressed as shares of purchases) is the most direct next step.
+
+\section{Balanced-panel robustness}
+Balanced panel: only users observed in every quarter from 2018Q1 to 2022Q4 (first purchase by 2018Q1, last purchase in 2022Q4 or later), and adopters whose first wearable falls in 2019Q1--2021Q4, so the event window $-4$ to $+4$ is fully observed for every cohort. This leaves 457 adopters (358 clean) and 2{,}392 never-treated users. The comparison column re-estimates the unbalanced panel on the same adopter cohorts (549 adopters, 4{,}086 controls). Reference period $t=-1$; post ATT averages quarters 1 to 4. Script: \texttt{design\_did\_balanced.R}. The conditional shoe-price outcome is dropped because it is not defined in every quarter.
+\begin{center}\small\input{../code/analysis/outputs/design_tab_balanced_main_all.tex}\end{center}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_balanced.png}
+\caption{Event studies, balanced (red) vs.\ unbalanced on the same cohorts (blue).}\label{fig:bal}\end{figure}
+\begin{itemize}[nosep]
+\item \textbf{The pre-trend does not go away.} Running-related purchases are about $0.09$--$0.11$ below controls at $t=-4$ to $-2$ in the balanced panel, almost identical to the unbalanced one, and the pet placebo shows the same $-0.05$ pre-gap. Post ATTs barely move (running-related $-0.035$ (0.019) vs.\ $-0.031$ (0.017); supplements $+0.027$ (0.019)). The clean sample behaves the same way (\texttt{design\_tab\_balanced\_main\_clean.tex}).
+\item \textbf{What this rules out.} Hypothesis 1 in its attrition form (adopters must remain active while controls can disappear) is not the main driver, since every user in the balanced panel is observed throughout. Total purchases $\ln(1+n)$ has a much smaller pre-trend in the balanced panel ($\approx -0.08$ vs.\ $-0.14$ to $-0.22$), so part of that run-up was composition, but the category-level pre-gaps remain. Hypotheses on latent intent, life events and income/tech affinity remain open.
+\item \textbf{Caveats.} The balanced sample selects long-lived heavy shoppers (about 3{,}100 of 5{,}000 users) and a short $\pm4$ quarter window; the post estimates are noisy (SEs of 0.01--0.02).
+\end{itemize}
+
+\section{Conditioning on baseline lifestyle (doubly-robust DiD)}
+\textbf{Approach.} Callaway--Sant'Anna with \texttt{est\_method="dr"} and baseline covariates, compared with the unconditional estimator on the \emph{same} samples (reference $t=-1$, never-treated controls). Lifestyle proxies come from each user's first 4 observed quarters (same rule for adopters and controls): log purchases, and 4 principal components (explaining 45\% of variance) of log purchases, log spend, category shares (running, fitness, supplements, medication, pet, books, gift cards, cables, cleaning, grocery) and any-running/any-fitness indicators; plus survey age, income, household size, sex, college, white, diabetes, smoking, drinking and a survey-missing indicator (missing values mean-imputed; all 5{,}026 users matched). Scripts: \texttt{prep\_design\_covariates.py}, \texttt{design\_did\_lifestyle.R}.
+\begin{itemize}[nosep]
+\item \textbf{Balanced panel:} as in the previous section (457 adopters, 2{,}392 controls; $e\in[-4,4]$; post = quarters 1--4).
+\item \textbf{Unbalanced panel:} adopters need $\geq$6 quarters of pre-history so the baseline window precedes adoption (476 adopters, 4{,}086 controls; $e\in[-8,8]$; post = quarters 1--8). This drops about 94 adopters relative to the earlier unbalanced runs.
+\item \textbf{Overlap is adequate:} the estimated adoption propensity averages 0.20 for adopters and 0.15 for balanced-panel controls (0.16 vs 0.10 unbalanced); the 99th percentile of control propensities is 0.39 and no adopter exceeds 0.9.
+\item \textbf{``Pre gap''} is the mean of the estimated pre-period coefficients ($e<-1$, relative to $t=-1$); it is the diagnostic that matters. A control for lifestyle works if placebo pre gaps move toward zero.
+\end{itemize}
+\begin{center}\small Balanced panel, all adopters\\[2pt]\input{../code/analysis/outputs/design_tab_lifestyle_main_all_balanced.tex}\end{center}
+\begin{center}\small Unbalanced panel (adopters with $\geq$6 quarters pre), all adopters\\[2pt]\input{../code/analysis/outputs/design_tab_lifestyle_main_all_unbalanced.tex}\end{center}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_lifestyle_balanced.png}
+\caption{Balanced panel: unconditional (blue) vs.\ DR with lifestyle covariates (red).}\label{fig:life}\end{figure}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_lifestyle_unbalanced.png}
+\caption{Unbalanced panel: unconditional vs.\ DR with lifestyle covariates.}\label{fig:lifeu}\end{figure}
+\textbf{Findings.}
+\begin{itemize}[nosep]
+\item \textbf{Baseline lifestyle does not remove the pre-trend.} In the balanced panel the running-related pre gap is $-0.092$ unconditional vs.\ $-0.093$ with covariates, the pet placebo $-0.047$ vs.\ $-0.049$, books $-0.022$ vs.\ $-0.026$; the post ATTs are essentially unchanged (running-related $-0.035$ (0.019), supplements $+0.028$ (0.019), running shoe $-0.025$ (0.012)). In the unbalanced panel the gaps are similar or slightly larger in absolute value (running-related $-0.082\to-0.074$, pet $-0.060\to-0.099$), with larger standard errors.
+\item \textbf{By the criterion stated above, the control fails:} placebo pre-trends do not flatten, so the post estimates should not be read as causal effects of the device. The covariates do shift the general-intensity outcomes (balanced $\ln(1+n)$ post $0.001\to0.041$, unbalanced $-0.146\to-0.055$), but those also have a steeper pre gap, so this mostly moves the level of the comparison, not the trend.
+\item \textbf{Interpretation.} Whatever drives the ramp is not captured by baseline (first-year) purchase mix or survey demographics. It is more likely a time-varying factor that evolves just before adoption (life events, an emerging fitness routine, hypotheses 3--4), so a time-invariant baseline adjustment cannot absorb it.
+\item \textbf{Clean sample:} same pattern (tables \texttt{design\_tab\_lifestyle\_main\_clean\_*.tex}).
+\end{itemize}
+
+\section{Pitfalls and follow-ups}
+\begin{itemize}[nosep]
+\item Pre-trends (and placebo pre-trends) mean the plain unconditional DiD is not credible; follow-ups: covariates/doubly-robust, not-yet-treated controls, HonestDiD bounds, matching on pre-adoption purchasing intensity (not run here).
+\item Quarterly indicators with sparse purchasers and a 10\% (2018) vs 1\% (2022) missing Category/Title rate make early outcomes undercounted; year effects not added.
+\item Bundlers are only 30 users, so the bundling comparison is underpowered; the $\pm1$ month window is a default.
+\item The conditional shoe-price placebo is estimated only on quarters with a shoe purchase (selected sample).
+\end{itemize}
+\end{document}

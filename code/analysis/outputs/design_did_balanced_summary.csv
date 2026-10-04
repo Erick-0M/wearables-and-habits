@@ -1,0 +1,53 @@
+"spec","outcome","name","panel","post_att","post_se","n_treated","n_ctrl"
+"main_all","run_shoe_d","Running shoe","balanced",-0.0245029474616336,0.0115925224561358,457,2392
+"main_all","run_shoe_d","Running shoe","unbalanced",-0.0171774009154373,0.00989343434657558,549,4086
+"main_all","run_any_d","Running-related (keyword)","balanced",-0.0351122541952387,0.0187038356799801,457,2392
+"main_all","run_any_d","Running-related (keyword)","unbalanced",-0.0311419441867166,0.0167270635580435,549,4086
+"main_all","fit_gear_d","Fitness gear","balanced",-0.000580893276640589,0.0150698837593633,457,2392
+"main_all","fit_gear_d","Fitness gear","unbalanced",-0.0092507301292625,0.0138244965623162,549,4086
+"main_all","supp_d","Supplements","balanced",0.027049272556955,0.0186344867046857,457,2392
+"main_all","supp_d","Supplements","unbalanced",0.0182890242875722,0.0168586475795723,549,4086
+"main_all","med_d","Medication","balanced",-0.0173575027626735,0.0158973509443089,457,2392
+"main_all","med_d","Medication","unbalanced",-0.0106585069189878,0.0146018325601069,549,4086
+"main_all","pet_d","PLACEBO: pet","balanced",-0.00495726089152024,0.0168624047300362,457,2392
+"main_all","pet_d","PLACEBO: pet","unbalanced",-0.0128154227322684,0.0152782511865658,549,4086
+"main_all","book_d","PLACEBO: books","balanced",0.0276688158193248,0.0211694779258078,457,2392
+"main_all","book_d","PLACEBO: books","unbalanced",0.00718144054884111,0.0192753680477058,549,4086
+"main_all","giftcard_d","PLACEBO: gift cards","balanced",0.00815217391304348,0.0163004867438513,457,2392
+"main_all","giftcard_d","PLACEBO: gift cards","unbalanced",0.0127071846281178,0.0140572385501477,549,4086
+"main_all","cable_d","PLACEBO: cables/batteries","balanced",0.0047104955980182,0.0227505673481283,457,2392
+"main_all","cable_d","PLACEBO: cables/batteries","unbalanced",0.00981065573382615,0.0209363910148453,549,4086
+"main_all","cleaning_d","PLACEBO: cleaning","balanced",0.0166695787563212,0.0169756422041212,457,2392
+"main_all","cleaning_d","PLACEBO: cleaning","unbalanced",0.0208970731039804,0.0148732393569411,549,4086
+"main_all","grocery_d","PLACEBO: grocery/food","balanced",0.0179484587574921,0.0173197538448732,457,2392
+"main_all","grocery_d","PLACEBO: grocery/food","unbalanced",0.017807533314525,0.0157398609502775,549,4086
+"main_all","ln_n","General: ln(1+#purchases)","balanced",0.00141474836433015,0.0334419552728575,457,2392
+"main_all","ln_n","General: ln(1+#purchases)","unbalanced",-0.0168497690138324,0.0317241967698571,549,4086
+"main_all","ln_spend","General: ln(1+spend)","balanced",-0.0263626908554122,0.0525118949347402,457,2392
+"main_all","ln_spend","General: ln(1+spend)","unbalanced",-0.0468031240923371,0.0503201058580672,549,4086
+"main_clean","run_shoe_d","Running shoe","balanced",-0.0222891481848247,0.01318314042442,358,2392
+"main_clean","run_shoe_d","Running shoe","unbalanced",-0.012636823499236,0.0112509886441723,431,4086
+"main_clean","run_any_d","Running-related (keyword)","balanced",-0.0435964971693354,0.0207729111195685,358,2392
+"main_clean","run_any_d","Running-related (keyword)","unbalanced",-0.0298669884390878,0.0185023032600396,431,4086
+"main_clean","fit_gear_d","Fitness gear","balanced",0.00751165430391809,0.0163426000232512,358,2392
+"main_clean","fit_gear_d","Fitness gear","unbalanced",-0.00264785041357893,0.0152670527780737,431,4086
+"main_clean","supp_d","Supplements","balanced",0.0244439682554511,0.0208771188312417,358,2392
+"main_clean","supp_d","Supplements","unbalanced",0.0214617969411136,0.0185918265339567,431,4086
+"main_clean","med_d","Medication","balanced",-0.0203620424693111,0.018079743726674,358,2392
+"main_clean","med_d","Medication","unbalanced",-0.0177806774548208,0.0166490991920604,431,4086
+"main_clean","pet_d","PLACEBO: pet","balanced",-0.013254727116459,0.0194903280398533,358,2392
+"main_clean","pet_d","PLACEBO: pet","unbalanced",-0.0186559168029049,0.0177688520211767,431,4086
+"main_clean","book_d","PLACEBO: books","balanced",0.0113083532632051,0.0237198871090038,358,2392
+"main_clean","book_d","PLACEBO: books","unbalanced",-0.00105519872553317,0.0214085600961499,431,4086
+"main_clean","giftcard_d","PLACEBO: gift cards","balanced",-0.020318251247174,0.0183757009964769,358,2392
+"main_clean","giftcard_d","PLACEBO: gift cards","unbalanced",-0.00999135268745939,0.0159473673832726,431,4086
+"main_clean","cable_d","PLACEBO: cables/batteries","balanced",-0.00692018086358625,0.0257285568494844,358,2392
+"main_clean","cable_d","PLACEBO: cables/batteries","unbalanced",0.00207230271297786,0.0238202022784857,431,4086
+"main_clean","cleaning_d","PLACEBO: cleaning","balanced",0.00638388436314718,0.0201222071282691,358,2392
+"main_clean","cleaning_d","PLACEBO: cleaning","unbalanced",0.00447989303674673,0.0175638398684144,431,4086
+"main_clean","grocery_d","PLACEBO: grocery/food","balanced",0.0410201136002691,0.019404079414062,358,2392
+"main_clean","grocery_d","PLACEBO: grocery/food","unbalanced",0.0300215009037622,0.0174622136000791,431,4086
+"main_clean","ln_n","General: ln(1+#purchases)","balanced",-0.0182650042104925,0.0363377854778559,358,2392
+"main_clean","ln_n","General: ln(1+#purchases)","unbalanced",-0.0353296846354038,0.0349446407148092,431,4086
+"main_clean","ln_spend","General: ln(1+spend)","balanced",-0.068051276776701,0.0574541077083934,358,2392
+"main_clean","ln_spend","General: ln(1+spend)","unbalanced",-0.0683915077372989,0.0562972233406432,431,4086
