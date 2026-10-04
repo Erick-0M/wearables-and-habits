@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  opt:
+    container_name: research-container
+    build: .
+    volumes:
+      - ./build:/home/repo-intro/build
+      - ./analysis:/home/repo-intro/analysis
+      - ./scripts:/home/repo-intro/scripts
+      - ./gcp-shared-config:/home/repo-intro/gcloud-config:ro
+    environment:
+      - JUPYTER_TOKEN=
+      - GOOGLE_APPLICATION_CREDENTIALS=/home/repo-intro/gcloud-config/application_default_credentials.json
+    ports:
+      - 8896:8888
