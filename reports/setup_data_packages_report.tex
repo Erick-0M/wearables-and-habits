@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[htt]{hyphenat}
+\sloppy
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black]{hyperref}
+
+\title{Wearables and Habits: Setup, Data Download and Package Audit\\\large Issue \#3}
+\date{3 October 2026}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Summary}
+The existing research container builds and runs. Open e-commerce 1.0 (CC0) is downloaded and checksum-verified. The
+dataset matches the plan's description: Amazon purchases linked to a survey by respondent ID. The staggered-DiD stack
+(R \texttt{did}, \texttt{fixest}, \texttt{HonestDiD}, \texttt{didimputation}, \texttt{bacondecomp}; Python \texttt{pyfixest})
+is added to the same container. No new container was needed. This is a setup report; the full audit and go/no-go are the next issue.
+
+\section{Data}
+Source: Harvard Dataverse, DOI \href{https://doi.org/10.7910/DVN/YGLYDY}{10.7910/DVN/YGLYDY}, license CC0 1.0.
+Downloaded by \texttt{code/scripts/download\_open\_ecommerce.py} (retry/backoff, HTTP range resume, md5 check) to
+\texttt{code/build/input/public/open\_ecommerce/} (gitignored). All md5 sums match Dataverse.
+
+\begin{center}\small
+\begin{tabular}{p{5.4cm}rp{6.2cm}}
+\toprule
+File & Size & Content \\\midrule
+\texttt{amazon-purchases.csv} & 313 MB & Order date, unit price, quantity, ship-to state, title, ASIN, category, respondent ID \\
+\texttt{survey.csv} & 1.3 MB & One row per respondent: age group, race, education, income, gender, state, household size, order frequency, smoking/alcohol/diabetes/wheelchair, 2021 life changes, data-sharing attitudes \\
+\texttt{fields.csv} & 2.5 kB & Question text for survey columns \\
+\texttt{survey-instrument.pdf} and \texttt{prescreen-} \texttt{survey-instrument.pdf} & 1.7 MB & Questionnaires \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Download quirk: \texttt{survey.csv} is ingested by Dataverse as a tab file; the listed md5 refers to the
+\emph{original} upload, so the script requests \texttt{?format=original}. Dataverse also returns 403 to requests without a User-Agent.
+
+\subsection*{First look (crude keyword flags, not the audit classification)}
+Wearable = title contains Fitbit, Garmin, Apple Watch, smartwatch, fitness/activity tracker or Forerunner. Running =
+title/category keywords. The wearable flag includes accessories (watch bands are 43\% of flagged rows), so it overstates device purchases.
+Script: \texttt{code/scripts/first\_look\_open\_ecommerce.py}.
+
+\begin{center}\small
+\input{../code/analysis/outputs/first_look_summary.tex}\\[1ex]
+First flagged wearable purchase, by year:\\[0.5ex]
+\input{../code/analysis/outputs/first_look_cohorts.tex}
+\end{center}
+
+\noindent Takeaways for the audit: the data run 2018--Aug 2024; there are roughly 2,000 ever-treated users and about
+1,100 with at least a year of history on both sides under the crude flag; cohorts are spread over 2018--2022 (few in 2023).
+The category field (e.g.\ \texttt{WEARABLE\_COMPUTER}, \texttt{BIOMETRIC\_MONITOR}, \texttt{SHOES}) should give a cleaner classification than titles.
+The survey has no running or exercise items, so the proxy cannot be validated within the dataset.
+
+\section{Packages}
+\begin{center}\small
+\begin{tabular}{p{4.6cm}p{5cm}p{5cm}}
+\toprule
+Need & Package & Status \\\midrule
+Wrangling large CSV & pandas, polars, pyarrow & already in container \\
+Panel/FE, baseline TWFE & linearmodels, statsmodels & already in container \\
+Callaway--Sant'Anna (primary) & R \texttt{did} 2.5.1 & added \\
+Sun--Abraham, fast FE & R \texttt{fixest} 0.14.2; Python \texttt{pyfixest} 0.60 & added \\
+Imputation estimator (robustness) & R \texttt{didimputation} 0.5.1 & added \\
+TWFE weight diagnostics & R \texttt{bacondecomp} 0.1.1 & added \\
+Sensitivity to parallel-trends violations & R \texttt{HonestDiD} 0.2.8 & added (GitHub, see below) \\
+Plots & matplotlib, seaborn, R ggplot2 & already in container \\
+Structural extension (if gated in) & pyblp & already in container \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Choice: R is the reference implementation for \texttt{did} and \texttt{HonestDiD}, so estimation runs in R inside the
+same container, with Python for data prep and a \texttt{pyfixest} cross-check. Everything was added to \texttt{code/Dockerfile};
+\texttt{requirements.txt} is empty and was left unchanged.
+
+\noindent Install pitfalls: \texttt{HonestDiD} is not on CRAN (installed from GitHub). Its dependency \texttt{Rglpk} only builds
+against conda's \texttt{glpk} (system \texttt{libglpk-dev} is not picked up), and \texttt{CVXR} $\geq$1.1 needs a Rust toolchain,
+so \texttt{CVXR} is pinned to 1.0-15. \texttt{arrow} (R) failed to install and is not needed; use \texttt{pyarrow}.
+
+\section{Open items}
+\begin{itemize}[nosep]
+  \item Docker compose warns that \texttt{version} is obsolete and that an orphan container from another project exists; harmless, not changed.
+  \item Mount of \texttt{analysis/} in the compose file is needed to write outputs from the container; it is already present.
+  \item Next issue: data audit (clean wearable vs.\ accessory classification, running-gear classification, cohort sizes, pre-trends) and go/no-go.
+\end{itemize}
+\end{document}
