@@ -31,7 +31,12 @@ print(pd.Series(aud))
 # ---- variable construction
 # Treatment: wearable activity/health trackers by Amazon Category (accessories such as WATCH_BAND, plain WATCH excluded)
 WEAR = ["WEARABLE_COMPUTER", "BIOMETRIC_MONITOR"]
-a["wear"] = cat.isin(WEAR)
+kids = ttl.str.contains(r"\bkids?\b|child|\bboys?\b|\bgirls?\b|toddler|\bace\b|junior", case=False, regex=True)
+a["wear"] = cat.isin(WEAR) & ~kids   # all non-kids trackers
+# cleanest treatment: non-kids, price >= $40 (drops pedometers/knockoffs), real device (not a compatible accessory), single unit
+acc = ttl.str.contains(r"compatible|replacement|screen protector|\bfor (fitbit|apple|garmin|samsung)", case=False, regex=True)
+a["wear_clean"] = a.wear & (a.price >= 40) & ~acc & (a.qty == 1)
+a["med"] = cat.isin(["MEDICATION", "OTC_MEDICATION"])   # human medication (animal medication excluded)
 # Outcome (proxy for running): running shoes / running apparel & gear. Title-based within relevant categories.
 run_re = r"running|runner|\brun\b|marathon|trail shoe|jogging"
 shoe_cat = cat.isin(["SHOES", "TECHNICAL_SPORT_SHOE"])
@@ -46,7 +51,9 @@ print(a.loc[a.run_any, "Category"].value_counts().head(8))
 w = a.groupby("uid").month.agg(first="min", last="max")
 w["n_months"] = (w["last"] - w["first"]).apply(lambda x: x.n) + 1
 ft = a[a.wear].groupby("uid").month.min().rename("g")
-w = w.join(ft)
+ftc = a[a.wear_clean].groupby("uid").month.min().rename("g_clean")
+w = w.join(ft).join(ftc)
+print("clean treated:", w.g_clean.notna().sum(), " non-kids treated:", w.g.notna().sum(), " flag rows wear/clean/med:", a.wear.sum(), a.wear_clean.sum(), a.med.sum())
 w["ever"] = w.g.notna()
 w["rel_start"] = (w.g - w["first"]).apply(lambda x: x.n if pd.notna(x) else np.nan)   # months of pre-history
 w["rel_end"] = (w["last"] - w.g).apply(lambda x: x.n if pd.notna(x) else np.nan)       # months of post-history
@@ -54,14 +61,14 @@ print(w.ever.sum(), "ever-treated;", ((w.rel_start >= 12) & (w.rel_end >= 12)).s
 
 # user-month panel over each user's observed window (zeros filled)
 gm = a.groupby(["uid", "month"]).agg(n=("qty", "size"), spend=("spend", "sum"),
-    wear=("wear", "sum"), run_shoe=("run_shoe", "sum"), run_any=("run_any", "sum"),
+    wear=("wear", "sum"), wear_clean=("wear_clean", "sum"), med=("med", "sum"), run_shoe=("run_shoe", "sum"), run_any=("run_any", "sum"),
     fit_gear=("fit_gear", "sum"), supp=("supp", "sum"))
 idx = pd.MultiIndex.from_tuples([(u, m) for u, f, l in zip(w.index, w["first"], w["last"]) for m in pd.period_range(f, l, freq="M")], names=["uid", "month"])
 P = gm.reindex(idx, fill_value=0).reset_index()
-P = P.merge(w[["g", "ever"]], left_on="uid", right_index=True)
+P = P.merge(w[["g", "g_clean", "ever"]], left_on="uid", right_index=True)
 P["event_t"] = (P.month - P.g).apply(lambda x: x.n if pd.notna(x) else np.nan)
 P["post"] = P.event_t >= 0
-for v in ["run_shoe", "run_any"]:
+for v in ["run_shoe", "run_any", "med"]:
     P[v + "_d"] = (P[v] > 0).astype(int)
 P["ln_spend"] = np.log1p(P.spend)
 P.to_pickle(I + "panel_user_month.pkl"); w.to_pickle(I + "user_windows.pkl")
@@ -71,13 +78,13 @@ print("panel", P.shape)
 def tex(df, path, fmt="{:,.2f}"):
     df.to_latex(path, float_format=lambda x: fmt.format(x), escape=True, column_format="l" + "r" * df.shape[1])
 tab = pd.DataFrame({
-    "Mean": [P.n.mean(), P.spend.mean(), P.wear.mean(), P.run_any.mean(), P.run_shoe.mean(), P.fit_gear.mean(), P.supp.mean()],
-    "Sd": [P.n.std(), P.spend.std(), P.wear.std(), P.run_any.std(), P.run_shoe.std(), P.fit_gear.std(), P.supp.std()],
-    "Pct zero": [100 * (P[v] == 0).mean() for v in ["n", "spend", "wear", "run_any", "run_shoe", "fit_gear", "supp"]],
-}, index=["Purchases", "Spend (\\$)", "Wearable purchases", "Running-related purchases", "Running-shoe purchases", "Fitness-gear purchases", "Supplement purchases"])
+    "Mean": [P.n.mean(), P.spend.mean(), P.wear.mean(), P.wear_clean.mean(), P.run_any.mean(), P.run_shoe.mean(), P.fit_gear.mean(), P.supp.mean(), P.med.mean()],
+    "Sd": [P.n.std(), P.spend.std(), P.wear.std(), P.wear_clean.std(), P.run_any.std(), P.run_shoe.std(), P.fit_gear.std(), P.supp.std(), P.med.std()],
+    "Pct zero": [100 * (P[v] == 0).mean() for v in ["n", "spend", "wear", "wear_clean", "run_any", "run_shoe", "fit_gear", "supp", "med"]],
+}, index=["Purchases", "Spend (\\$)", "Wearable purchases (non-kids)", "Wearable purchases (clean)", "Running-related purchases", "Running-shoe purchases", "Fitness-gear purchases", "Supplement purchases", "Medication purchases"])
 tex(tab, O + "audit_panel_summary.tex", "{:,.3f}")
-w2 = pd.DataFrame({"Users": [len(w), w.ever.sum(), (w.ever & (w.rel_start >= 6)).sum(), (w.ever & (w.rel_start >= 12) & (w.rel_end >= 12)).sum(), (w.ever & (w.rel_start >= 24) & (w.rel_end >= 24)).sum()]},
-    index=["All users", "Ever bought wearable", "\\quad $\\geq$6m pre-history", "\\quad $\\geq$12m pre and post", "\\quad $\\geq$24m pre and post"])
+w2 = pd.DataFrame({"Users": [len(w), w.ever.sum(), (w.ever & (w.rel_start >= 6)).sum(), (w.ever & (w.rel_start >= 12) & (w.rel_end >= 12)).sum(), (w.ever & (w.rel_start >= 24) & (w.rel_end >= 24)).sum(), w.g_clean.notna().sum(), (w.g_clean.notna() & (((w.g_clean - w["first"]).apply(lambda x: x.n if pd.notna(x) else np.nan)) >= 12) & (((w["last"] - w.g_clean).apply(lambda x: x.n if pd.notna(x) else np.nan)) >= 12)).sum()]},
+    index=["All users", "Ever bought wearable (non-kids)", "\\quad $\\geq$6m pre-history", "\\quad $\\geq$12m pre and post", "\\quad $\\geq$24m pre and post", "Ever bought clean wearable", "\\quad $\\geq$12m pre and post"])
 w2.to_latex(O + "audit_treated_counts.tex", escape=False, column_format="lr", float_format=lambda x: f"{x:,.0f}")
 fm = lambda v: f"{v:,.2f}" if isinstance(v, float) else (f"{v:,}" if isinstance(v, (int, np.integer)) else str(v))
 aud_t = pd.DataFrame({"Value": [fm(v) for v in aud.values()]}, index=[i.replace("%", "\\%").replace("<=", "$\\leq$").replace(">", "$>$") for i in aud])
@@ -85,15 +92,15 @@ aud_t.to_latex(O + "audit_quirks.tex", escape=False, column_format="lr")
 
 # ---- time series (calendar), with smoothness check
 mon = P.groupby("month").agg(users=("uid", "nunique"), n=("n", "sum"), spend=("spend", "sum"),
-    wear=("wear", "sum"), run_any=("run_any", "sum"), run_shoe=("run_shoe", "sum"), fit_gear=("fit_gear", "sum"), supp=("supp", "sum"))
+    wear=("wear", "sum"), wear_clean=("wear_clean", "sum"), med=("med", "sum"), run_any=("run_any", "sum"), run_shoe=("run_shoe", "sum"), fit_gear=("fit_gear", "sum"), supp=("supp", "sum"))
 mon.index = mon.index.to_timestamp()
 print(mon.users.tail(20).to_string())
 mon = mon[mon.users >= 1000]  # after ~2023-03 almost no user is still observed; ratios there are noise
 per = pd.DataFrame({"Purchases per active user": mon.n / mon.users, "Spend per active user (USD)": mon.spend / mon.users,
-    "Wearable purchases per 1000 users": 1000 * mon.wear / mon.users, "Running-related per 1000 users": 1000 * mon.run_any / mon.users,
+    "Wearable (non-kids) per 1000 users": 1000 * mon.wear / mon.users, "Wearable (clean) per 1000 users": 1000 * mon.wear_clean / mon.users, "Running-related per 1000 users": 1000 * mon.run_any / mon.users,
     "Running-shoe per 1000 users": 1000 * mon.run_shoe / mon.users, "Fitness-gear per 1000 users": 1000 * mon.fit_gear / mon.users,
-    "Supplement per 1000 users": 1000 * mon.supp / mon.users})
-fig, ax = plt.subplots(4, 2, figsize=(11, 10), sharex=True)
+    "Supplement per 1000 users": 1000 * mon.supp / mon.users, "Medication per 1000 users": 1000 * mon.med / mon.users})
+fig, ax = plt.subplots(5, 2, figsize=(11, 12), sharex=True)
 for k, (c, x) in enumerate(list(per.items()) + [("Active users (window)", mon.users)]):
     r = ax.flat[k]; r.plot(x.index, x.values, lw=1, color="#1f77b4"); r.plot(x.index, x.rolling(12, center=True).mean(), lw=1.8, color="#d62728")
     r.set_title(c, fontsize=9); r.grid(alpha=.3)
@@ -110,10 +117,10 @@ print(smd)
 
 # ---- event-time series among ever-treated (bins pooled), outcome smoothness around adoption
 E = P[P.ever & (P.event_t.between(-24, 24))]
-ev = E.groupby("event_t")[["run_any", "run_shoe", "fit_gear", "supp", "n", "spend"]].mean()
+ev = E.groupby("event_t")[["run_any", "run_shoe", "fit_gear", "supp", "med", "n", "spend"]].mean()
 cnt = E.groupby("event_t").uid.nunique()
-fig, ax = plt.subplots(2, 3, figsize=(12, 6), sharex=True)
-for r, c in zip(ax.flat, ["n", "spend", "run_any", "run_shoe", "fit_gear", "supp"]):
+fig, ax = plt.subplots(2, 4, figsize=(15, 6), sharex=True)
+for r, c in zip(ax.flat, ["n", "spend", "run_any", "run_shoe", "fit_gear", "supp", "med"]):
     r.plot(ev.index, ev[c], marker="o", ms=3, lw=1); r.axvline(0, color="k", ls="--", lw=.8); r.set_title(c + " per user-month", fontsize=9); r.grid(alpha=.3)
 fig.suptitle("Ever-treated: mean by months since first wearable (unbalanced composition)"); fig.tight_layout()
 fig.savefig(O + "audit_event_time_series.png", dpi=130); plt.close(fig)
@@ -127,16 +134,16 @@ fig.tight_layout(); fig.savefig(O + "audit_run_treated_vs_never.png", dpi=130); 
 
 # ---- correlations (user level, pre-adoption window for treated, whole window for never-treated)
 U_ = P.groupby("uid").agg(n=("n", "sum"), spend=("spend", "sum"), months=("month", "size"), wear=("wear", "sum"),
-    run_any=("run_any", "sum"), run_shoe=("run_shoe", "sum"), fit_gear=("fit_gear", "sum"), supp=("supp", "sum"))
-for v in ["n", "spend", "wear", "run_any", "run_shoe", "fit_gear", "supp"]:
+    run_any=("run_any", "sum"), run_shoe=("run_shoe", "sum"), fit_gear=("fit_gear", "sum"), supp=("supp", "sum"), med=("med", "sum"))
+for v in ["n", "spend", "wear", "run_any", "run_shoe", "fit_gear", "supp", "med"]:
     U_[v + "_pm"] = U_[v] / U_.months
-cv = ["n_pm", "spend_pm", "wear_pm", "run_any_pm", "run_shoe_pm", "fit_gear_pm", "supp_pm"]
-lab = ["Purchases", "Spend", "Wearable", "Running", "Run shoes", "Fitness gear", "Supplements"]
+cv = ["n_pm", "spend_pm", "wear_pm", "run_any_pm", "run_shoe_pm", "fit_gear_pm", "supp_pm", "med_pm"]
+lab = ["Purchases", "Spend", "Wearable", "Running", "Run shoes", "Fitness gear", "Supplements", "Medication"]
 C = U_[cv].corr(method="spearman")
 fig, r = plt.subplots(figsize=(6.5, 5.5)); im = r.imshow(C.values, cmap="RdBu_r", vmin=-1, vmax=1)
-r.set_xticks(range(7), lab, rotation=45, ha="right"); r.set_yticks(range(7), lab)
-for i in range(7):
-    for j in range(7): r.text(j, i, f"{C.values[i, j]:.2f}", ha="center", va="center", fontsize=8)
+r.set_xticks(range(8), lab, rotation=45, ha="right"); r.set_yticks(range(8), lab)
+for i in range(8):
+    for j in range(8): r.text(j, i, f"{C.values[i, j]:.2f}", ha="center", va="center", fontsize=8)
 fig.colorbar(im); r.set_title("Spearman correlations of per-month user rates"); fig.tight_layout()
 fig.savefig(O + "audit_correlations.png", dpi=130); plt.close(fig)
 
@@ -212,3 +219,18 @@ with open(O + "audit_balance_ftests.tex", "w") as f:
                      ("Ever-treated on first-12m purchasing", ft3.pvalue, int(m3.nobs)), ("Adoption date on demographics (treated only)", ft4.pvalue, int(m4.nobs))]:
         f.write(f"{nm} & {p:.3f} & {n:,} \\\\\n")
     f.write("\\bottomrule\\end{tabular}\n")
+
+# ---- user-quarter export for R (did). Outcomes as dummies; g = first treated quarter index (0 = never)
+P["q"] = P.month.dt.asfreq("Q")
+Q = P[P.month <= pd.Period("2022-12", "M")].groupby(["uid", "q"]).agg(n=("n", "sum"), spend=("spend", "sum"), mo=("month", "size"),
+    **{v: (v, "sum") for v in ["run_any", "run_shoe", "med", "fit_gear", "supp"]}).reset_index()
+Q = Q[Q.mo == 3]   # keep complete quarters only
+for v in ["run_any", "run_shoe", "med", "fit_gear", "supp"]: Q[v + "_d"] = (Q[v] > 0).astype(int)
+base = pd.Period("2018Q1", "Q")
+Q["t"] = Q.q.apply(lambda x: (x - base).n + 1); Q["uidn"] = Q.uid.astype("category").cat.codes + 1
+for gname in ["g", "g_clean"]:
+    gq = w[gname].dropna().dt.asfreq("Q").apply(lambda x: (x - base).n + 1)
+    Q[gname] = Q.uid.map(gq).fillna(0).astype(int)
+Q["ln_spend"] = np.log1p(Q.spend)
+Q.drop(columns="q").to_csv(I + "panel_user_quarter.csv", index=False)
+print("quarter panel", Q.shape, (Q.g_clean > 0).groupby(Q.uid).max().sum(), "clean-treated users in panel")
