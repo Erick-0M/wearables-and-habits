@@ -117,8 +117,59 @@ Primary outcome & Running-related purchases & TBD & TBD \\
 Primary estimator & Callaway--Sant'Anna & TBD & TBD \\
 Go/no-go thresholds & Set numerically before estimation & TBD & TBD \\
 Final deliverable & Report series; paper optional & TBD & TBD \\
+Structural extension & Decide only after reduced-form results & TBD & TBD \\
 \bottomrule
 \end{tabular}
+
+\section{Potential extension (conditional on the reduced-form results)}
+This section is speculative and is \emph{not} part of the committed plan. It is only opened if the reduced-form
+evidence clears the gate below.
+
+\subsection*{How broad can the question be?}
+\begin{itemize}
+  \item \textbf{Other habits:} walking/steps, cycling, gym and home-fitness gear, nutrition and sleep products, all
+        visible as purchase categories.
+  \item \textbf{Dynamics:} is the effect a durable habit or a novelty spike that decays? Abandonment can be proxied
+        by repurchase or upgrade of the device and by lapses in gear purchasing.
+  \item \textbf{Heterogeneity:} who responds (age, sex, income, baseline activity), which matters most for policy.
+  \item \textbf{Spillovers and complements:} household members, apparel, accessories, subscriptions.
+  \item \textbf{Mechanisms:} self-monitoring/information, goal-setting and gamification, commitment, identity.
+  \item \textbf{Policy and welfare:} would subsidies (employer or insurer programs) pay off, and for whom?
+\end{itemize}
+
+\subsection*{Structural approaches that could add something}
+\begin{tabular}{p{0.24\textwidth}p{0.36\textwidth}p{0.30\textwidth}}
+\toprule
+Model & Idea & What it could answer \\
+\midrule
+Dynamic discrete choice with habit stock &
+  Forward-looking adoption of a durable device; exercise intensity depends on a habit stock the device
+  makes cheaper to build. &
+  Selection versus causal effect of adoption; value of adoption; effect of subsidies. \\
+Learning model &
+  The device gives a signal about the returns to one's own effort; users update, and may quit if the signal is bad. &
+  Why effects fade or persist, and who abandons. \\
+Present bias / commitment &
+  A (partially) naive hyperbolic discounter uses the device as a commitment or self-monitoring tool. &
+  Whether wearables work through self-control, and welfare of targeted subsidies. \\
+Demand with complements (BLP-style) &
+  Joint demand for wearables and running gear with price variation and complementarity. &
+  Cross-price effects, counterfactual prices, spillovers on gear markets. \\
+\bottomrule
+\end{tabular}
+
+\medskip
+\noindent\textbf{Link to the reduced form.} The event-study coefficients (level, persistence, heterogeneity) become
+the target moments for indirect inference or simulated-method-of-moments estimation, so the structural model is
+disciplined by the credible reduced-form evidence rather than replacing it. The \texttt{pyblp} package is already in the
+project container if the demand route is chosen.
+
+\subsection*{Gate for opening the extension}
+All of the following should hold: (i) a clean, precisely estimated effect on the primary outcome with
+no obvious pre-trend violation; (ii) enough panel length to see dynamics (persistence or decay);
+(iii) meaningful heterogeneity worth explaining; (iv) price or product variation sufficient to identify
+a choice model, if the demand route is chosen. Otherwise the project stays reduced form. Main risk: the outcome
+is still a purchase proxy, so any structural claim about \emph{running itself} rests on the proxy assumption.
 
 \section{Next steps and follow-up issues}
 \begin{enumerate}
