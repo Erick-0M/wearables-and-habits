@@ -1,0 +1,61 @@
+"spec","grp","outcome","name","post_att","post_se","pre_p","n_treated","n_ctrl"
+"main_all","all","run_shoe_d","Running shoe",-0.0159113637221567,0.00943538519232272,NA,570,4086
+"main_all","all","run_any_d","Running-related (keyword)",-0.0328555264294978,0.0164212372524401,0,570,4086
+"main_all","all","fit_gear_d","Fitness gear",-0.0196950639350725,0.0136393342203516,0,570,4086
+"main_all","all","supp_d","Supplements",0.0217575804825191,0.01698464392186,0,570,4086
+"main_all","all","med_d","Medication",-0.00496239847828604,0.014247201622282,2e-05,570,4086
+"main_all","all","pet_d","PLACEBO: pet",-0.0239150532389609,0.0159514635846951,0,570,4086
+"main_all","all","book_d","PLACEBO: books",-0.000838014534282008,0.0194782735848233,2e-05,570,4086
+"main_all","all","giftcard_d","PLACEBO: gift cards",0.00247189793489607,0.0138835090563174,0,570,4086
+"main_all","all","cable_d","PLACEBO: cables/batteries",0.00388849531244405,0.0194906456118426,0,570,4086
+"main_all","all","cleaning_d","PLACEBO: cleaning",0.0209354020013214,0.013683412891814,0,570,4086
+"main_all","all","grocery_d","PLACEBO: grocery/food",0.0200972016444314,0.0154553809629024,0,570,4086
+"main_all","all","ln_shoe_price","PLACEBO: ln shoe price (cond.)",-0.045641084119578,0.068146823012623,0,441,2069
+"main_all","all","ln_n","General: ln(1+#purchases)",-0.109957360507337,0.0344028018115715,0,570,4086
+"main_all","all","ln_spend","General: ln(1+spend)",-0.203278933210862,0.0531147290987985,0,570,4086
+"main_clean","all","run_shoe_d","Running shoe",-0.0105951005454848,0.0108752556059238,NA,447,4086
+"main_clean","all","run_any_d","Running-related (keyword)",-0.0271515738489086,0.0184482777854044,0,447,4086
+"main_clean","all","fit_gear_d","Fitness gear",-0.012066043447586,0.0149701356185372,0,447,4086
+"main_clean","all","supp_d","Supplements",0.0244685809958891,0.0189111131631318,0,447,4086
+"main_clean","all","med_d","Medication",-0.0157440354008802,0.0162667642301769,0,447,4086
+"main_clean","all","pet_d","PLACEBO: pet",-0.0310454996403979,0.0182814183820211,0,447,4086
+"main_clean","all","book_d","PLACEBO: books",-0.00951230944993225,0.0214510046095001,0,447,4086
+"main_clean","all","giftcard_d","PLACEBO: gift cards",-0.0191702623560692,0.0160043330483949,0,447,4086
+"main_clean","all","cable_d","PLACEBO: cables/batteries",-0.00762882426914627,0.0218381360175675,0,447,4086
+"main_clean","all","cleaning_d","PLACEBO: cleaning",-0.00136837922527518,0.0164013205389727,NA,447,4086
+"main_clean","all","grocery_d","PLACEBO: grocery/food",0.0324566380727753,0.0168441139917788,0,447,4086
+"main_clean","all","ln_shoe_price","PLACEBO: ln shoe price (cond.)",0.0105930612572574,0.0791808143651212,0,347,2069
+"main_clean","all","ln_n","General: ln(1+#purchases)",-0.122501280841943,0.0378000515366146,0,447,4086
+"main_clean","all","ln_spend","General: ln(1+spend)",-0.227769657097261,0.0580215309652114,0,447,4086
+"bundle_g","bundlers","run_shoe_x","Running shoe (ex-bundle)",-0.0054370618080639,0.0532803657509275,NA,30,4086
+"bundle_g","bundlers","run_any_x","Running-related (ex-bundle)",-0.11318697833241,0.082868588807691,NA,30,4086
+"bundle_g","bundlers","fit_gear_d","Fitness gear",-0.155546065270092,0.070934332304438,NA,30,4086
+"bundle_g","bundlers","supp_d","Supplements",-0.0275034031392811,0.0732189448336577,NA,30,4086
+"bundle_g","nonbundlers","run_shoe_x","Running shoe (ex-bundle)",-0.013832350081186,0.00906063319018016,NA,540,4086
+"bundle_g","nonbundlers","run_any_x","Running-related (ex-bundle)",-0.0155263042201871,0.0162894814340949,0,540,4086
+"bundle_g","nonbundlers","fit_gear_d","Fitness gear",-0.0116561114153739,0.0137485881172395,0,540,4086
+"bundle_g","nonbundlers","supp_d","Supplements",0.0240872499586561,0.017406622073562,0,540,4086
+"bundle_g_clean","bundlers","run_shoe_x","Running shoe (ex-bundle)",0.0333582975619472,0.054887866210822,NA,24,4086
+"bundle_g_clean","bundlers","run_any_x","Running-related (ex-bundle)",0.00752362380722772,0.0791342720026187,NA,24,4086
+"bundle_g_clean","bundlers","fit_gear_d","Fitness gear",-0.121665489179319,0.0658072141387919,NA,24,4086
+"bundle_g_clean","bundlers","supp_d","Supplements",0.0451481034706003,0.0925558730984574,NA,24,4086
+"bundle_g_clean","nonbundlers","run_shoe_x","Running shoe (ex-bundle)",-0.0117590914099364,0.010655899203739,NA,423,4086
+"bundle_g_clean","nonbundlers","run_any_x","Running-related (ex-bundle)",-0.0142383516909945,0.0183679704233381,NA,423,4086
+"bundle_g_clean","nonbundlers","fit_gear_d","Fitness gear",-0.00551062175105351,0.0153033009558407,NA,423,4086
+"bundle_g_clean","nonbundlers","supp_d","Supplements",0.0230955976826575,0.0192030517084134,0,423,4086
+"shoe_all","all","wear_d","Wearable purchase",0.00107585860287007,0.00712136670294328,NA,604,3980
+"shoe_all","all","run_noshoe_d","Running-related, non-shoe",0.0288951430459627,0.0136341671115737,NA,604,3980
+"shoe_all","all","fit_gear_d","Fitness gear",0.000591299554601635,0.0127752945115342,0,604,3980
+"shoe_all","all","supp_d","Supplements",-0.00313826218825126,0.0168372209039646,0,604,3980
+"shoe_all","all","run_shoe_d","Running shoe (repeat)",0.0822164150194559,0.0053368144451945,NA,604,3980
+"shoe_all","all","med_d","PLACEBO-ish: medication",-0.00178821800191463,0.0133613752870288,NA,604,3980
+"shoe_all","all","pet_d","PLACEBO: pet",-0.0194603578794194,0.0165618255308013,0,604,3980
+"shoe_all","all","book_d","PLACEBO: books",-0.0350939494918835,0.0180907241766459,0.00039,604,3980
+"shoe_noadopt","all","wear_d","Wearable purchase",0,NA,NA,399,3383
+"shoe_noadopt","all","run_noshoe_d","Running-related, non-shoe",0.0413679301266108,0.0150443536189007,NA,399,3383
+"shoe_noadopt","all","fit_gear_d","Fitness gear",0.00594208111182054,0.0139960620141592,NA,399,3383
+"shoe_noadopt","all","supp_d","Supplements",-0.0198094972064843,0.0207528284588784,0,399,3383
+"shoe_noadopt","all","run_shoe_d","Running shoe (repeat)",0.0735007074110364,0.00628296487437224,NA,399,3383
+"shoe_noadopt","all","med_d","PLACEBO-ish: medication",0.0049113780140989,0.0154027146126083,0,399,3383
+"shoe_noadopt","all","pet_d","PLACEBO: pet",-0.0352679400892433,0.0198788923128025,0,399,3383
+"shoe_noadopt","all","book_d","PLACEBO: books",-0.0324284368380225,0.021645583636818,0,399,3383
