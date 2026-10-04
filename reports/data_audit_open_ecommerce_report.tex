@@ -22,6 +22,7 @@ Exploratory audit of Open e-commerce 1.0. Main takeaways:
 \item \textbf{Treatment (updated, kids' trackers excluded):} 940 users buy a non-kids tracker or smartwatch (Amazon categories \texttt{WEARABLE\_COMPUTER}, \texttt{BIOMETRIC\_MONITOR}); 570 have $\geq$12 months of pre and post history. A stricter ``clean'' definition leaves 723 users (447 with $\geq$12m pre and post).
 \item \textbf{Series are smooth in levels} after the restriction (no month-to-month jumps beyond $3\,\mathrm{sd}$ except for one running-shoe month), but rare-event counts (wearable, running shoes, fitness gear) are noisy month to month, as expected from small counts.
 \item \textbf{Balance fails.} Ever-treated users differ from never-treated users on income, education, household size and, strongly, on how long they are observed and how much they buy. Adopters are also on a rising purchasing trend before adoption. This supports the plan's main threat (selection and anticipation); the design must use never-treated/not-yet-treated comparisons conditional on covariates, and event-study pre-trends are the key test.
+\item \textbf{Data-quality flags (details in the next-to-last section):} Category/Title are missing for 10\% of rows in 2018 but 1\% in 2022, so keyword-based outcomes are undercounted early and part of the upward trends in all flagged series is artificial; the running keyword flag is noisy (only about a fifth of flagged rows are shoes); 37\% of users have a gap of more than 180 days between purchases.
 \item The running proxy is only a purchase proxy and is weak in count terms (about 1 in 100 user-months has a running-shoe purchase).
 \end{itemize}
 
@@ -35,8 +36,8 @@ The user-month panel (\texttt{code/build/interm/panel\_user\_month.pkl}, gitigno
 \item \textbf{Treatment, non-kids}: first month of a purchase in \texttt{WEARABLE\_COMPUTER} or \texttt{BIOMETRIC\_MONITOR}, dropping titles with kid/child/boy/girl/toddler/junior/``Ace'' (157 of 1{,}598 rows). Watch bands and plain \texttt{WATCH} are excluded (the latter mixes in non-smart watches).
 \item \textbf{Treatment, clean}: non-kids, unit price $\geq\$40$ (drops pedometers and cheap knockoffs), quantity one, and title not a compatible/replacement accessory (1{,}086 rows). This is the cleanest ``a real device was bought'' definition; its cost is dropping genuine low-price trackers.
 \item \textbf{Medication}: category \texttt{MEDICATION} or \texttt{OTC\_MEDICATION} (human drugs, 16{,}278 rows; animal medication excluded). Titles are mostly OTC (pain, cold, allergy), not prescriptions.
-\item \textbf{Running-shoe}: category \texttt{SHOES} or \texttt{TECHNICAL\_SPORT\_SHOE} with a running keyword in the title (2{,}580 rows).
-\item \textbf{Running-related} (broader): any running keyword in the title outside table runners, books and movies, plus \texttt{TECHNICAL\_SPORT\_SHOE} (13{,}456 rows). It includes socks, shorts and headphones, so it is loose; keep both versions.
+\item \textbf{Running-shoe}: category \texttt{SHOES} or \texttt{TECHNICAL\_SPORT\_SHOE} with a running keyword in the title (2{,}490 rows).
+\item \textbf{Running-related} (broader): any running/runner/jogging keyword in the title outside table runners, books and movies, plus \texttt{TECHNICAL\_SPORT\_SHOE} (12{,}342 rows). It includes socks, shorts and headphones, so it is loose; keep both versions.
 \item \textbf{Fitness gear}, \textbf{supplements} (secondary or placebo-type outcomes), total purchases and spend (activity controls). Each is a count and a $>0$ dummy per user-month.
 \end{itemize}
 \begin{center}\small\input{../code/analysis/outputs/audit_panel_summary.tex}\quad\input{../code/analysis/outputs/audit_treated_counts.tex}\end{center}
@@ -67,11 +68,11 @@ Event-time series show (i) a mechanical spike at $t=0$ in total purchases, spend
 \includegraphics[width=0.6\textwidth]{../code/analysis/outputs/audit_correlations.png}
 \caption{Spearman correlations of per-user monthly rates (full observed window).}
 \end{figure}
-Everything is positively correlated with overall purchasing intensity (running-related 0.61, supplements 0.62, fitness gear 0.49 with total purchases). The wearable--running correlation (0.28) is no larger than wearable's correlation with supplements (0.23) or fitness gear (0.24), so there is no evident running-specific link at the user level; the raw association is mostly ``heavy buyer'' selection, and outcomes should be conditioned on or scaled by overall activity.
+Everything is positively correlated with overall purchasing intensity (running-related 0.59, supplements 0.62, medication 0.61, fitness gear 0.49 with total purchases). The wearable--running correlation (0.26) is no larger than wearable's correlation with supplements (0.21) or fitness gear (0.22), so there is no evident running-specific link at the user level; the raw association is mostly ``heavy buyer'' selection, and outcomes should be conditioned on or scaled by overall activity.
 
 \section{Balance tests}
 Linear probability models (HC1 standard errors, covariates standardized so coefficients are the change in $P(\mathrm{ever\ treated})$ per $+1\,\mathrm{sd}$) with joint $F$-tests.
-Demographics come from the survey; income ``prefer not to say'' and other missing answers drop out, so $N=3{,}761$ for the demographic regressions.
+Demographics come from the survey; only the 76 ``prefer not to say'' income answers drop out, so $N=4{,}951$ for the demographic regressions.
 \begin{figure}[h]\centering
 \includegraphics[width=0.75\textwidth]{../code/analysis/outputs/audit_balance_ever_treated.png}
 \caption{Ever-treated vs never-treated on survey demographics, with and without log months observed.}
@@ -85,24 +86,45 @@ Demographics come from the survey; income ``prefer not to say'' and other missin
 \caption{Among ever-treated users: adoption date on demographics (balance across cohorts).}
 \end{figure}
 \begin{center}\small\input{../code/analysis/outputs/audit_balance_ftests.tex}\end{center}
-All joint tests reject. Treated users are higher income, more educated or older, in larger households, and observed for longer (a $+1\,\mathrm{sd}$ longer window is worth about $+4$ percentage points of adoption probability against a base of about 20\%, which is partly mechanical: more months give more chances to buy). They also buy more overall in their first year. Conditional on overall purchasing and spend, early running, fitness and supplement rates do not predict adoption, but unconditionally ever-treated users buy about twice as many running-related items as never-treated users throughout the sample (the running-related figure above), so the level difference is largely general buying intensity. Cohorts are also not balanced on demographics ($p=0.006$), so timing is not as-good-as-random.
+All joint tests reject. Treated users have higher income, are more often white and non-smokers, live in larger households, and are observed for longer (age, education and gender are not individually significant) (a $+1\,\mathrm{sd}$ longer window is worth about $+4$ percentage points of adoption probability against a base of about 20\%, which is partly mechanical: more months give more chances to buy). They also buy more overall in their first year. Conditional on overall purchasing and spend, early running, fitness and supplement rates do not predict adoption, but unconditionally ever-treated users buy about twice as many running-related items as never-treated users throughout the sample (the running-related figure above), so the level difference is largely general buying intensity. Cohorts are also not balanced on demographics ($p=0.006$), so timing is not as-good-as-random.
 
-\section{First look: effect on running and medication purchases}
-Exploratory Callaway--Sant'Anna estimates (R \texttt{did}; script \texttt{did\_first\_look.R}) on a user-quarter panel through 2022Q4 (complete quarters only, 2018Q1 cohorts dropped, not-yet-treated controls, no covariates, universal base period $t=-1$, unbalanced panel). Outcomes are dummies for any purchase in the quarter. Both treatment definitions are shown.
+\section{Data quality}
+All checks in \texttt{code/scripts/data\_quality\_checks.py}.
+
+\subsection*{Missing classification fields over time}
+\begin{center}\small\input{../code/analysis/outputs/dq_missing_by_year.tex}\end{center}
+Category and Title are missing together (the same rows), falling steadily from about 10\% of rows in 2018 to about 1\% in 2022. Missing rows are not random: their median price is \$16 versus \$14 for classified rows. Because every outcome and the treatment are defined from Category or Title, all flagged counts are mechanically undercounted early in the sample, which creates an artificial upward trend in every series (visible in the calendar figure). Next issue should either express outcomes as shares of classified purchases or include year effects, and test sensitivity to dropping 2018--2019.
+
+\subsection*{Coverage per user}
 \begin{figure}[h]\centering
-\includegraphics[width=\textwidth]{../code/analysis/outputs/did_first_look_event_study.png}
-\caption{Event-study ATTs by quarters since first tracker purchase (95\% pointwise CIs).}
+\includegraphics[width=\textwidth]{../code/analysis/outputs/dq_user_coverage.png}
+\caption{Observed window, purchases per user and longest gap between purchases.}
 \end{figure}
-\begin{itemize}[nosep]
-\item \textbf{Medication:} no detectable effect. Post-adoption coefficients are within noise of zero and the overall ATT is $-0.001$ (se $0.012$, non-kids) and $-0.013$ (se $0.015$, clean) in quarterly purchase probability. The pre-period coefficients are negative (about $-0.04$ on average), so adopters were already buying more medication per quarter before adoption.
-\item \textbf{Running-related:} the pre-period coefficients are strongly negative (about $-0.08$ in quarters $-8$ to $-2$) and flatten after adoption; overall post ATT $-0.014$ (se $0.016$) and $-0.001$ (se $0.016$). This is the signature of selection into adoption: adopters ramp up buying (including running goods) before buying the device. The pattern is the same for supplements and fitness gear, so it reflects general buying intensity, not running specifically.
-\item The clean and non-kids definitions give similar pictures. With these pre-trends, the no-covariate estimates are not credible causal estimates; they show the problem to be solved (covariates for pre-adoption intensity, matching, or a HonestDiD sensitivity), not a result.
-\end{itemize}
+Users are heavy and long-lived (median 232 purchases over 58 months; only 1.6\% are observed under 12 months). But 37\% of users have a gap of more than 180 days, so ``no purchase in a month'' sometimes means ``not shopping on Amazon,'' not ``did not buy''. A zero in the panel is a weak signal for the extensive margin; the next issue could trim long inactive spells.
+\begin{figure}[h]\centering
+\includegraphics[width=\textwidth]{../code/analysis/outputs/dq_rows_per_month.png}
+\caption{Raw purchase rows per month and users with a purchase that month (months with $\geq$1{,}000 users).}
+\end{figure}
+
+\subsection*{Duplicates, outliers and other checks}
+\begin{center}\small\input{../code/analysis/outputs/dq_checks.tex}\end{center}
+Duplicates (same user, date, price, quantity, title and category) are 1.1\% of rows, spread over 3{,}037 users with 30\% in the top 1\% of users; only 5 are wearable rows, so they are probably repeat or multi-unit orders and are kept. Price and quantity outliers are few and look real (a 96TB drive, 8 batteries); the top 0.1\% of rows hold 4.2\% of spend, so spend should be log-transformed or winsorized.
+
+\subsection*{Validation of the treatment definitions}
+\begin{center}\small\input{../code/analysis/outputs/dq_wearable_brands.tex}\end{center}
+Branded devices are almost all in the clean definition. The unbranded group (390 rows, median price \$40) is where the definitions differ: about a fifth of non-kids wearable rows cost less than \$40 and are mostly generic fitness bands, pedometers and a few non-tracker items (an ankle band, a medical alert device, a heart-rate armband). Some real branded devices fall out of the clean definition (e.g.\ multi-unit orders or titles starting ``for Fitbit''), and the non-kids filter keeps at least one Garmin device that was dropped by the clean rule, so the clean definition is conservative on both sides.
+
+\subsection*{Validation of outcome definitions}
+Only 21\% of running-related rows are shoes; the rest are shorts, pants, socks, headphones, waist packs and braces whose title says ``running'', plus some noise (dog running cables, cooling towels). Running-shoe is precise but rare; running-related is a ``sports apparel for running'' measure with false positives. Medication titles are human OTC drugs (pain, allergy, cough, antacid); only 0.2\% mention pets. Prescription drugs are not observed.
+
+\subsection*{Survey}
+\begin{center}\small\input{../code/analysis/outputs/dq_survey_missing.tex}\end{center}
+Survey covariates are essentially complete: no missing values in the ten items used, except 76 income answers (1.5\%) coded ``Prefer not to say''. A bug in the first version of the balance regressions silently dropped the 1{,}199 respondents who answered ``1 (just me!)'' to household size (the answer was not numeric), cutting $N$ from 5{,}027 to 3{,}761; it is fixed and the balance results above use the corrected sample. Lesson for the next issue: check the $N$ after every covariate merge.
 
 \section{Go/no-go read and next steps}
 \begin{itemize}[nosep]
 \item Sample size is workable for a reduced-form design (about 600 treated users with $\geq$12 months pre and post) but thin for monthly running-shoe outcomes. Preliminary read: \textbf{conditional go}, with the broader running measure and quarterly bins as the primary outcome.
-\item Needed next: exclude kids' trackers and gift/duplicate-looking purchases; decide on the running outcome definition (tighter keyword audit of titles); set up the Callaway--Sant'Anna comparison group (not-yet-treated plus never-treated) with demographics and pre-adoption purchase intensity as covariates; handle the $t=0$ spike and the 2022-11 sample drop.
+\item Needed next: decide how to handle the declining missing-title share (below) and duplicates; decide on the running outcome definition (tighter keyword audit of titles); set up the Callaway--Sant'Anna comparison group (not-yet-treated plus never-treated) with demographics and pre-adoption purchase intensity as covariates; handle the $t=0$ spike and the 2022-11 sample drop.
 \item Environment note: the compose \texttt{container\_name: research-container} collides with another project's running container on this machine (mounted from \texttt{exploration-exploitation}), so this audit was run with \texttt{docker compose run} on this repo's \texttt{code-opt} image (same service, no new container). R \texttt{fixest} and \texttt{did} load there; the audit regressions are in Python \texttt{statsmodels} because they are simple LPMs.
 \end{itemize}
 \end{document}

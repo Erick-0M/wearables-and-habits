@@ -38,7 +38,7 @@ acc = ttl.str.contains(r"compatible|replacement|screen protector|\bfor (fitbit|a
 a["wear_clean"] = a.wear & (a.price >= 40) & ~acc & (a.qty == 1)
 a["med"] = cat.isin(["MEDICATION", "OTC_MEDICATION"])   # human medication (animal medication excluded)
 # Outcome (proxy for running): running shoes / running apparel & gear. Title-based within relevant categories.
-run_re = r"running|runner|\brun\b|marathon|trail shoe|jogging"
+run_re = r"running|runner|trail shoe|jogging"
 shoe_cat = cat.isin(["SHOES", "TECHNICAL_SPORT_SHOE"])
 a["run_shoe"] = shoe_cat & ttl.str.contains(run_re, case=False, regex=True)
 a["run_any"] = (ttl.str.contains(run_re, case=False, regex=True) & ~cat.isin(["TABLE_RUNNER", "BOOK", "ABIS_BOOK", "ABIS_DVD", "PHYSICAL_MOVIE"]) & ~ttl.str.contains("table runner|runner rug|rug runner|stair runner|carpet runner", case=False)) | (cat == "TECHNICAL_SPORT_SHOE")
@@ -47,6 +47,7 @@ a["supp"] = cat.isin(["NUTRITIONAL_SUPPLEMENT", "VITAMIN"])  # placebo-ish / oth
 print("flag rows:", a[["wear", "run_shoe", "run_any", "fit_gear", "supp"]].sum().to_dict())
 print(a.loc[a.run_any, "Category"].value_counts().head(8))
 
+a.drop(columns=["ASIN/ISBN (Product Code)", "Shipping Address State"]).to_pickle(I + "purchases_flagged.pkl")  # row-level flags for data_quality_checks.py
 # user windows and first-treatment date
 w = a.groupby("uid").month.agg(first="min", last="max")
 w["n_months"] = (w["last"] - w["first"]).apply(lambda x: x.n) + 1
@@ -157,7 +158,7 @@ S["female"] = (S["Q-demos-gender"] == "Female").astype(float).where(S["Q-demos-g
 S["college"] = S["Q-demos-education"].fillna("").str.contains("Bachelor|Graduate|graduate|degree", regex=True).astype(float).where(S["Q-demos-education"].notna())
 S["white"] = (S["Q-demos-race"] == "White or Caucasian").astype(float).where(S["Q-demos-race"].notna())
 S["hisp"] = (S["Q-demos-hispanic"] == "Yes").astype(float).where(S["Q-demos-hispanic"].notna())
-S["hh"] = pd.to_numeric(S["Q-amazon-use-hh-size"].replace({"4+": 4}), errors="coerce")
+S["hh"] = S["Q-amazon-use-hh-size"].replace({"4+": 4, "1 (just me!)": 1}).astype(float)   # (earlier version lost the "1 (just me!)" answers to NaN)
 S["diab"] = (S["Q-personal-diabetes"] == "Yes").astype(float).where(S["Q-personal-diabetes"].notna())
 S["smoke"] = (S["Q-substance-use-cigarettes"] == "Yes").astype(float).where(S["Q-substance-use-cigarettes"].notna())
 S["alc"] = (S["Q-substance-use-alcohol"] == "Yes").astype(float).where(S["Q-substance-use-alcohol"].notna())
