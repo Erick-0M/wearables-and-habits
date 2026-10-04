@@ -68,6 +68,17 @@ The pre-trend appears in running outcomes, supplements, medication and all place
 \end{enumerate}
 Hypotheses 1 and 2 are mechanical and would need to be ruled out before reading any of the post-adoption estimates as behavioral. Because placebo categories move with the main outcomes, a ``purchasing intensity'' control (or outcomes expressed as shares of purchases) is the most direct next step.
 
+\section{Balanced-panel robustness}
+Balanced panel: only users observed in every quarter from 2018Q1 to 2022Q4 (first purchase by 2018Q1, last purchase in 2022Q4 or later), and adopters whose first wearable falls in 2019Q1--2021Q4, so the event window $-4$ to $+4$ is fully observed for every cohort. This leaves 457 adopters (358 clean) and 2{,}392 never-treated users. The comparison column re-estimates the unbalanced panel on the same adopter cohorts (549 adopters, 4{,}086 controls). Reference period $t=-1$; post ATT averages quarters 1 to 4. Script: \texttt{design\_did\_balanced.R}. The conditional shoe-price outcome is dropped because it is not defined in every quarter.
+\begin{center}\small\input{../code/analysis/outputs/design_tab_balanced_main_all.tex}\end{center}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_balanced.png}
+\caption{Event studies, balanced (red) vs.\ unbalanced on the same cohorts (blue).}\label{fig:bal}\end{figure}
+\begin{itemize}[nosep]
+\item \textbf{The pre-trend does not go away.} Running-related purchases are about $0.09$--$0.11$ below controls at $t=-4$ to $-2$ in the balanced panel, almost identical to the unbalanced one, and the pet placebo shows the same $-0.05$ pre-gap. Post ATTs barely move (running-related $-0.035$ (0.019) vs.\ $-0.031$ (0.017); supplements $+0.027$ (0.019)). The clean sample behaves the same way (\texttt{design\_tab\_balanced\_main\_clean.tex}).
+\item \textbf{What this rules out.} Hypothesis 1 in its attrition form (adopters must remain active while controls can disappear) is not the main driver, since every user in the balanced panel is observed throughout. Total purchases $\ln(1+n)$ has a much smaller pre-trend in the balanced panel ($\approx -0.08$ vs.\ $-0.14$ to $-0.22$), so part of that run-up was composition, but the category-level pre-gaps remain. Hypotheses on latent intent, life events and income/tech affinity remain open.
+\item \textbf{Caveats.} The balanced sample selects long-lived heavy shoppers (about 3{,}100 of 5{,}000 users) and a short $\pm4$ quarter window; the post estimates are noisy (SEs of 0.01--0.02).
+\end{itemize}
+
 \section{Pitfalls and follow-ups}
 \begin{itemize}[nosep]
 \item Pre-trends (and placebo pre-trends) mean the plain unconditional DiD is not credible; follow-ups: covariates/doubly-robust, not-yet-treated controls, HonestDiD bounds, matching on pre-adoption purchasing intensity (not run here).

@@ -48,3 +48,20 @@ t = pd.DataFrame({"Outcome": b.name, "Bundlers (N=30)": f(b.post_att_bundlers, b
 open(O + "design_tab_bundle.tex", "w").write(t.to_latex(index=False, column_format="lrrr"))
 tab(S[(S.spec == "shoe_all")], "design_tab_shoe_treat.tex"); tab(S[(S.spec == "shoe_noadopt")], "design_tab_shoe_noadopt.tex")
 print(t)
+
+# ---- balanced-panel robustness (design_did_balanced.R)
+EB = pd.read_csv(O + "design_did_balanced_eventstudy.csv"); SB = pd.read_csv(O + "design_did_balanced_summary.csv"); EB["se"] = EB.se.fillna(0)
+outs = ["run_shoe_d", "run_any_d", "fit_gear_d", "supp_d", "med_d", "pet_d", "book_d", "grocery_d", "ln_n"]
+fig, ax = plt.subplots(3, 3, figsize=(12.6, 8.7))
+for a, o in zip(ax.ravel(), outs):
+    for p, c, off in [("balanced", "#c0392b", -.1), ("unbalanced", "#1f4e79", .1)]:
+        x = EB[(EB.spec == "main_all") & (EB.outcome == o) & (EB.panel == p)].sort_values("e")
+        a.errorbar(x.e + off, x.att, yerr=1.96 * x.se, fmt="o", ms=3, lw=1, c=c, label=p)
+    a.axhline(0, c="grey", lw=.6); a.axvline(-1, c="grey", lw=.6, ls=":"); a.set_title(x.name.iloc[0], fontsize=8); a.tick_params(labelsize=7)
+ax[0, 0].legend(fontsize=7); fig.supxlabel("Quarters relative to adoption (reference: $t=-1$)", fontsize=8); fig.tight_layout(); fig.savefig(O + "design_es_balanced.png", dpi=150); plt.close(fig)
+f = lambda a, s: a.map("{:.3f}".format) + " (" + s.map("{:.3f}".format) + ")"
+for sp in ["main_all", "main_clean"]:
+    d = SB[SB.spec == sp].pivot(index=["outcome", "name"], columns="panel", values=["post_att", "post_se"]); d.columns = ["_".join(c) for c in d.columns]
+    d = d.reset_index(); d = d.set_index("outcome").loc[[o for o in SB.outcome.unique()]].reset_index()
+    t = pd.DataFrame({"Outcome": d.name.str.replace("&", r"\&").str.replace("#", r"\#"), "Balanced": f(d.post_att_balanced, d.post_se_balanced), "Unbalanced (same cohorts)": f(d.post_att_unbalanced, d.post_se_unbalanced)})
+    open(O + f"design_tab_balanced_{sp}.tex", "w").write(t.to_latex(index=False, column_format="lrr"))
