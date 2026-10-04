@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[htt]{hyphenat}
+\sloppy
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black]{hyperref}
+
+\title{Wearables and Habits: Synthetic Control Estimates\\\large Issue \#9}
+\date{4 October 2026}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Summary}
+Exploratory unit-level synthetic control of first wearable purchase on running-related purchases, as an alternative to the staggered DiD of \#7 (which fails on pre-trends). Each adopter gets its own synthetic twin from never-treated users, matched on the 8 pre-adoption quarters; gaps are averaged over adopters in event time.
+\begin{itemize}[nosep]
+\item \textbf{Pre-fit is easy, and removes the pre-trend by construction.} Pre-period gaps are about zero for every outcome (Figures~\ref{fig:main}, \ref{fig:plac}), so the ramp-up into adoption that broke DiD is absorbed by the synthetic twin.
+\item \textbf{Post gaps are positive, not specific to running.} Matching on the outcome's own history, the post ATT (quarters 1--8) is $+0.017$ (0.006) for running shoes, $+0.070$ (0.012) running-related, $+0.033$ (0.009) fitness gear, $+0.100$ (0.016) supplements. But the placebo outcomes are positive too (pet $+0.036$, books $+0.057$, grocery $+0.039$) and so is total purchasing, $\ln(1+n)$: $+0.176$ (0.038). Adopters simply buy more of everything afterwards than their synthetic twins.
+\item \textbf{Adding $\ln(1+n)$ to the match shrinks the effects} (Table~\ref{tab:lnn}): running shoe $+0.011$ (0.006), running-related $+0.043$ (0.012), supplements $+0.068$ (0.017), and the placebos fall to $+0.018$, $+0.030$, $-0.001$. Running-related and supplements remain above the placebos, but this is suggestive at best.
+\item \textbf{Not window-end attrition.} Requiring donors to be observed through the entire post window barely changes anything (e.g.\ running-related $+0.066$ own, $+0.039$ with $\ln n$ match; \texttt{synth\_summary\_fulldonor.csv}).
+\item \textbf{Reading.} The synthetic estimates and the \#7 DiD disagree in sign, so neither is credible alone. A plausible driver of the common positive gap is selection of adopters on a purchase in $e=0$ (and on $\geq$12 months of activity after), which donors are not selected on; this predicts positive gaps for all outcomes, as observed. The placebo test with pseudo-adopters drawn from donors (red) is $\approx 0$, but those units lack that selection, so it does not rule this out.
+\end{itemize}
+
+\section{Design}
+\begin{itemize}[nosep]
+\item \textbf{Data:} the \#7 user-quarter panel (\texttt{design\_panel\_q.csv}), ``clean'' sample. Treated: clean adopters with 8 observed pre-quarters, i.e.\ adoption in 2020Q1 or later (288 of 447). Donors: never-treated users (about 4{,}100) observed in all 8 pre-quarters.
+\item \textbf{Weights:} per adopter, non-negative weights summing to one on the 150 nearest donors (pre-period distance), least squares on the 8 pre-quarters (SLSQP). Spec ``own'' matches the outcome only; ``own$+\ln n$'' also matches $\ln(1+n)$. Outcomes: any purchase in the quarter (as in \#7).
+\item \textbf{Effects:} gap$_{i,e}$ = adopter minus synthetic, $e=-8,\dots,8$, $e=0$ the adoption quarter; ATT$_e$ = mean over adopters, SE = cross-adopter SD$/\sqrt{n}$ (ignores weight estimation error). Post ATT = mean of $e=1,\dots,8$ (excludes the device quarter).
+\item \textbf{Placebo:} 265 never-treated users get randomly drawn real adoption quarters and are run through the same procedure against the remaining donors (Placebo column, red points).
+\item Code: \texttt{code/scripts/synth\_control.py}, \texttt{synth\_control\_figs.py}.
+\end{itemize}
+
+\section{Results}
+\begin{table}[h]\centering\small
+\caption{Synthetic control, matching on own pre-history. Pre RMSE = adopter-vs-synthetic RMS gap in pre-period; second figure is the RMS outcome level.}
+\input{../code/analysis/outputs/synth_tab_own.tex}\end{table}
+\begin{table}[h]\centering\small
+\caption{Synthetic control, matching on own pre-history and $\ln(1+n)$.}\label{tab:lnn}
+\input{../code/analysis/outputs/synth_tab_lnn.tex}\end{table}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/synth_es_main_lnn.png}
+\caption{Event-study gaps, main outcomes, matching on own history and $\ln n$ (blue adopters, red placebo; 95\% CIs).}\label{fig:main}\end{figure}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/synth_es_placebo_lnn.png}
+\caption{Same, placebo outcomes.}\label{fig:plac}\end{figure}
+
+With the own-only match, pre-fit RMSE is 0.001--0.015, an order of magnitude below the outcome level, which suggests interpolation (8 targets, 150 donors); the $\ln n$ match fits less tightly (RMSE 0.04--0.15) and is the more conservative specification (\texttt{synth\_es\_main\_own.png}, \texttt{synth\_es\_placebo\_own.png}).
+
+\section{Caveats and follow-ups}
+\begin{itemize}[nosep]
+\item Treated sample is the later adopters only (2020+), so not comparable to \#7's 447.
+\item Follow-ups (not done): hold-out pre-period fit to test overfitting; synthetic DiD / augmented SC with a unit fixed effect; pseudo-adopters selected on an $e=0$ purchase to test the selection explanation; not-yet-treated donors; HonestDiD on \#7.
+\end{itemize}
+\end{document}
