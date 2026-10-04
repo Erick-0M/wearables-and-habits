@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=black]{hyperref}
+\setlist{itemsep=2pt,topsep=3pt}
+\setlength{\emergencystretch}{2em}
+
+\title{Wearables and Habits: Project Plan Proposal\\\large Issue \#1 --- for discussion}
+\date{3 October 2026}
+\author{}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Status:} proposal, nothing here has been tested. Statements about the dataset are from memory of the
+published description and must be confirmed in the data audit.
+
+\section{Summary of the proposal}
+\textbf{Question:} do wearables (fitness trackers, GPS watches) causally increase running?
+\textbf{Data:} Open e-commerce 1.0 (Berke et al., 2024; DOI \href{https://doi.org/10.7910/DVN/YGLYDY}{10.7910/DVN/YGLYDY}),
+which, as I understand it, contains Amazon purchase histories linked to survey demographics.
+\textbf{Design:} staggered-adoption event study, with the first wearable purchase as treatment.
+
+\textbf{Central caveat.} The data observe \emph{purchases}, not activity. Running can only be measured through proxies
+(e.g.\ running shoes, apparel, gear). The research question should therefore be stated as the effect of wearable
+adoption on \emph{running-related purchasing}, with the link to actual running treated as an assumption, not a result.
+The second threat is selection: people who decide to start running buy a watch and shoes together, which breaks
+no-anticipation. The plan is built around these two issues.
+
+\section{Questions the plan must answer}
+
+\subsection*{Scope}
+\begin{itemize}
+  \item \textbf{Treatment:} first purchase of a wearable (tracker, GPS/sports watch). Smartwatches are a borderline
+        class; proposal is to start with a narrow definition and treat the broad one as robustness.
+  \item \textbf{Primary outcome:} running-related purchases (shoes, apparel, accessories) per user-period.
+        \textbf{Secondary:} replacement cadence of running shoes as a volume proxy; other fitness categories.
+  \item \textbf{Population:} users with an observed wearable purchase (treated) and users with none (never-treated),
+        restricted to users with enough purchase history before and after adoption.
+  \item \textbf{Time window:} the full span of the dataset, trimmed by the audit. Out of scope: health outcomes,
+        non-purchase behavior, anything requiring activity data.
+\end{itemize}
+
+\subsection*{Data: sufficient, and what else?}
+\begin{itemize}
+  \item \textbf{Strengths:} individual purchase histories with timestamps and demographics permit event-study
+        timing and heterogeneity by age, sex, income.
+  \item \textbf{Weaknesses:} purchases are not use; gifts and household purchases; a single retailer;
+        possibly small treated sample once cohorts are split.
+  \item \textbf{Supplements to scope, not to commit to:} aggregate public activity data (e.g.\ platform
+        trend reports) as external validity for the proxy; a short validation using any source that links
+        purchases to self-reported running (the dataset's own survey, if it has such items).
+  \item \textbf{Alternatives if the audit fails:} different treatment/outcome pair in the same data
+        (e.g.\ other fitness equipment), or a different dataset with activity logs but weaker identification.
+\end{itemize}
+
+\subsection*{Identification}
+\begin{tabular}{p{0.28\textwidth}p{0.66\textwidth}}
+\toprule
+Element & Proposal \\
+\midrule
+Estimator & Heterogeneity-robust staggered DiD (Callaway--Sant'Anna as primary; Sun--Abraham or
+            de~Chaisemartin--D'Haultfoeuille as cross-check). Avoid plain two-way fixed effects. \\
+Comparison group & Never-treated users; not-yet-treated as robustness. \\
+Key assumptions & Parallel trends; no anticipation; stable composition of users. \\
+Tests & Pre-trend event-study plots; placebo outcomes (unrelated categories); placebo treatment
+        (other electronics purchases); sensitivity of trends (HonestDiD-style bounds);
+        dropping users whose running-gear purchases coincide with the wearable within a short window. \\
+Alternatives & Matched DiD on pre-period purchases; heterogeneity cuts. IV is not proposed (no credible instrument known). \\
+\bottomrule
+\end{tabular}
+
+\subsection*{Feasibility checks before committing}
+\begin{enumerate}
+  \item Number of treated users, and how many treatment cohorts (by period).
+  \item Pre- and post-adoption history length per treated user.
+  \item Share of users with any running-related purchase; how sparse the outcome is.
+  \item Whether wearables and running categories can be classified reliably from the product fields.
+  \item Minimum detectable effect from a simulation using the real treatment timing and outcome variance.
+\end{enumerate}
+
+\subsection*{Outputs}
+A LaTeX report per phase (compiled PDF) under \texttt{reports/}; scripts under \texttt{code/scripts/};
+figures and tables under \texttt{code/analysis/outputs/}; a final summary report. A paper in \texttt{paper/} is
+optional and decided at the go/no-go point.
+
+\section{Phase outline}
+\begin{tabular}{p{0.04\textwidth}p{0.18\textwidth}p{0.68\textwidth}}
+\toprule
+\# & Phase & Content (headings only) \\
+\midrule
+1 & Setup & Container, repo structure, data download with retry/resume, data dictionary. \\
+2 & Data audit & Classification of wearables and running products, feasibility checks, power. \\
+\multicolumn{3}{l}{\textbf{GO/NO-GO:} after phase 2 (see below).} \\
+3 & Design & Fix the treatment and outcome definitions, sample, estimators, and test list before estimating. \\
+4 & Analysis & Main event study and heterogeneity. \\
+5 & Robustness & Placebos, alternative estimators and treatment definitions, sensitivity. \\
+6 & Reporting & Final report, figures, replication notes. \\
+\bottomrule
+\end{tabular}
+
+\subsection*{Proposed go/no-go criteria (after the data audit)}
+\textbf{Go} if all hold: (i) enough treated users with usable pre- and post-periods that the minimum detectable effect is
+economically meaningful; (ii) wearables and running products can be classified credibly; (iii) pre-trends in a first
+look are not obviously violated. \textbf{Adjust} if only the outcome or treatment definition fails (redefine, re-audit once).
+\textbf{No-go} if (i) fails, then switch data or reframe as descriptive. Numeric thresholds are left to the
+decision owner, to be set \emph{before} looking at estimates.
+
+\section{Open decisions}
+\begin{tabular}{p{0.38\textwidth}p{0.30\textwidth}p{0.10\textwidth}p{0.10\textwidth}}
+\toprule
+Decision & Proposed default & Owner & Deadline \\
+\midrule
+Treatment definition & Narrow (trackers, GPS watches) & TBD & TBD \\
+Primary outcome & Running-related purchases & TBD & TBD \\
+Primary estimator & Callaway--Sant'Anna & TBD & TBD \\
+Go/no-go thresholds & Set numerically before estimation & TBD & TBD \\
+Final deliverable & Report series; paper optional & TBD & TBD \\
+Structural extension & Decide only after reduced-form results & TBD & TBD \\
+\bottomrule
+\end{tabular}
+
+\section{Potential extension (conditional on the reduced-form results)}
+This section is speculative and is \emph{not} part of the committed plan. It is only opened if the reduced-form
+evidence clears the gate below.
+
+\subsection*{How broad can the question be?}
+\begin{itemize}
+  \item \textbf{Other habits:} walking/steps, cycling, gym and home-fitness gear, nutrition and sleep products, all
+        visible as purchase categories.
+  \item \textbf{Dynamics:} is the effect a durable habit or a novelty spike that decays? Abandonment can be proxied
+        by repurchase or upgrade of the device and by lapses in gear purchasing.
+  \item \textbf{Heterogeneity:} who responds (age, sex, income, baseline activity), which matters most for policy.
+  \item \textbf{Spillovers and complements:} household members, apparel, accessories, subscriptions.
+  \item \textbf{Mechanisms:} self-monitoring/information, goal-setting and gamification, commitment, identity.
+  \item \textbf{Policy and welfare:} would subsidies (employer or insurer programs) pay off, and for whom?
+\end{itemize}
+
+\subsection*{Structural approaches that could add something}
+\begin{tabular}{p{0.24\textwidth}p{0.36\textwidth}p{0.30\textwidth}}
+\toprule
+Model & Idea & What it could answer \\
+\midrule
+Dynamic discrete choice with habit stock &
+  Forward-looking adoption of a durable device; exercise intensity depends on a habit stock the device
+  makes cheaper to build. &
+  Selection versus causal effect of adoption; value of adoption; effect of subsidies. \\
+Learning model &
+  The device gives a signal about the returns to one's own effort; users update, and may quit if the signal is bad. &
+  Why effects fade or persist, and who abandons. \\
+Present bias / commitment &
+  A (partially) naive hyperbolic discounter uses the device as a commitment or self-monitoring tool. &
+  Whether wearables work through self-control, and welfare of targeted subsidies. \\
+Demand with complements (BLP-style) &
+  Joint demand for wearables and running gear with price variation and complementarity. &
+  Cross-price effects, counterfactual prices, spillovers on gear markets. \\
+\bottomrule
+\end{tabular}
+
+\medskip
+\noindent\textbf{Link to the reduced form.} The event-study coefficients (level, persistence, heterogeneity) become
+the target moments for indirect inference or simulated-method-of-moments estimation, so the structural model is
+disciplined by the credible reduced-form evidence rather than replacing it. The \texttt{pyblp} package is already in the
+project container if the demand route is chosen.
+
+\subsection*{Gate for opening the extension}
+All of the following should hold: (i) a clean, precisely estimated effect on the primary outcome with
+no obvious pre-trend violation; (ii) enough panel length to see dynamics (persistence or decay);
+(iii) meaningful heterogeneity worth explaining; (iv) price or product variation sufficient to identify
+a choice model, if the demand route is chosen. Otherwise the project stays reduced form. Main risk: the outcome
+is still a purchase proxy, so any structural claim about \emph{running itself} rests on the proxy assumption.
+
+\section{Next steps and follow-up issues}
+\begin{enumerate}
+  \item Review this proposal; resolve the open decisions above.
+  \item Open one issue per phase: Setup, Data audit, Design, Analysis, Robustness, Reporting.
+  \item Data audit issue includes the go/no-go memo as its deliverable.
+\end{enumerate}
+
+\end{document}
