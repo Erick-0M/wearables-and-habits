@@ -16,41 +16,48 @@
 \maketitle
 
 \section{Summary}
-Exploratory unit-level synthetic control of first wearable purchase on running-related purchases, as an alternative to the staggered DiD of \#7 (which fails on pre-trends). Each adopter gets its own synthetic twin from never-treated users, matched on the 8 pre-adoption quarters; gaps are averaged over adopters in event time.
+Exploratory unit-level synthetic control of first wearable purchase on running-related purchases, as an alternative to the staggered DiD of \#7 (which fails on pre-trends). \textbf{Balanced panel only}, and each adopter's synthetic twin is matched on outcome history, purchase intensity, category mix and survey demographics (Section~\ref{sec:design}).
 \begin{itemize}[nosep]
-\item \textbf{Pre-fit is easy, and removes the pre-trend by construction.} Pre-period gaps are about zero for every outcome (Figures~\ref{fig:main}, \ref{fig:plac}), so the ramp-up into adoption that broke DiD is absorbed by the synthetic twin.
-\item \textbf{Post gaps are positive, not specific to running.} Matching on the outcome's own history, the post ATT (quarters 1--8) is $+0.017$ (0.006) for running shoes, $+0.070$ (0.012) running-related, $+0.033$ (0.009) fitness gear, $+0.100$ (0.016) supplements. But the placebo outcomes are positive too (pet $+0.036$, books $+0.057$, grocery $+0.039$) and so is total purchasing, $\ln(1+n)$: $+0.176$ (0.038). Adopters simply buy more of everything afterwards than their synthetic twins.
-\item \textbf{Adding $\ln(1+n)$ to the match shrinks the effects} (Table~\ref{tab:lnn}): running shoe $+0.011$ (0.006), running-related $+0.043$ (0.012), supplements $+0.068$ (0.017), and the placebos fall to $+0.018$, $+0.030$, $-0.001$. Running-related and supplements remain above the placebos, but this is suggestive at best.
-\item \textbf{Not window-end attrition.} Requiring donors to be observed through the entire post window barely changes anything (e.g.\ running-related $+0.066$ own, $+0.039$ with $\ln n$ match; \texttt{synth\_summary\_fulldonor.csv}).
-\item \textbf{Reading.} The synthetic estimates and the \#7 DiD disagree in sign, so neither is credible alone. A plausible driver of the common positive gap is selection of adopters on a purchase in $e=0$ (and on $\geq$12 months of activity after), which donors are not selected on; this predicts positive gaps for all outcomes, as observed. The placebo test with pseudo-adopters drawn from donors (red) is $\approx 0$, but those units lack that selection, so it does not rule this out.
+\item \textbf{Running-related purchasing rises modestly, but so does everything else.} Post ATT (quarters 1--$L$): running-related $+0.046$ (0.017) with $L=8$ (113 adopters) and $+0.039$ (0.013) with $L=6$ (242); running shoes $+0.016$ (0.012) and $+0.013$ (0.008); supplements $+0.066$ (0.025) and $+0.050$ (0.017); fitness gear and medication are within about 1.5 SE of zero.
+\item \textbf{Non-running outcomes move too.} Books $+0.042$ (0.023) / $+0.040$ (0.016), grocery $+0.040$ / $+0.010$, pet $+0.035$ / $+0.020$, and total purchases $\ln(1+n)$ $+0.264$ (0.054) / $+0.205$ (0.040). Adopters buy more overall than their twins after adoption, and the running-related gain is of the same size as the books placebo, so it cannot be attributed to running specifically.
+\item \textbf{Pre-fit and balance.} Pre-period gaps are about zero (Figures~\ref{fig:main}, \ref{fig:plac}), so the pre-trend problem of \#7 is absorbed by the twin. Category shares and most demographics are close to the adopters' (Table~\ref{tab:bal}); the exceptions are pre-period $\ln$ spend (8.22 vs 8.07 synthetic) and income band (2.89 vs 2.72).
+\item \textbf{Pseudo-adopter placebo} (random never-treated users given real adoption dates) is about zero for nearly all outcomes (largest: pet $+0.034$ at $L=8$, supplements $-0.027$ at $L=6$).
+\item \textbf{Relation to earlier runs and \#7.} A preliminary unbalanced-panel run (outcome-only matching, 288 adopters; kept in \texttt{synth\_summary*.csv}) gave larger gaps (running-related $+0.070$). The DiD of \#7 gave small \emph{negative} estimates, so the methods still disagree in sign. A plausible common driver is selection of adopters on a purchase in $e=0$ and on $\geq$12 months of later activity, which donors are not selected on; this predicts positive gaps for all outcomes. Not tested.
 \end{itemize}
 
-\section{Design}
+\section{Design}\label{sec:design}
 \begin{itemize}[nosep]
-\item \textbf{Data:} the \#7 user-quarter panel (\texttt{design\_panel\_q.csv}), ``clean'' sample. Treated: clean adopters with 8 observed pre-quarters, i.e.\ adoption in 2020Q1 or later (288 of 447). Donors: never-treated users (about 4{,}100) observed in all 8 pre-quarters.
-\item \textbf{Weights:} per adopter, non-negative weights summing to one on the 150 nearest donors (pre-period distance), least squares on the 8 pre-quarters (SLSQP). Spec ``own'' matches the outcome only; ``own$+\ln n$'' also matches $\ln(1+n)$. Outcomes: any purchase in the quarter (as in \#7).
-\item \textbf{Effects:} gap$_{i,e}$ = adopter minus synthetic, $e=-8,\dots,8$, $e=0$ the adoption quarter; ATT$_e$ = mean over adopters, SE = cross-adopter SD$/\sqrt{n}$ (ignores weight estimation error). Post ATT = mean of $e=1,\dots,8$ (excludes the device quarter).
-\item \textbf{Placebo:} 265 never-treated users get randomly drawn real adoption quarters and are run through the same procedure against the remaining donors (Placebo column, red points).
-\item Code: \texttt{code/scripts/synth\_control.py}, \texttt{synth\_control\_figs.py}.
+\item \textbf{Balanced sample:} ``clean'' sample users observed in every quarter 2018Q1--2022Q4 (2{,}764 users). Adopters must have the full window $g-L,\dots,g+L$ inside 2018Q1--2022Q4: $L=8$ gives adoption in 2020 (113 adopters), $L=6$ in 2019Q3--2021Q2 (242). Donors: balanced never-treated users (2{,}392). No unobserved quarters, so donors are never dropped in the post-period.
+\item \textbf{What is matched} (donors and adopter use the same calendar pre-window $g-L,\dots,g-1$), four blocks, each column standardized by the donor-pool SD and scaled so a block's total weight is:
+\begin{enumerate}[nosep]
+\item weight 2: the studied outcome (any purchase in the quarter) in each pre-quarter;
+\item weight 1: $\ln(1+\mathrm{purchases})$ in each pre-quarter (omitted when it is the outcome);
+\item weight 1: pre-window category mix, the share of purchases in running-related, fitness gear, supplements, medication, pet, books, gift cards, cables/batteries, cleaning and grocery, plus $\ln(1+\mathrm{total spend})$;
+\item weight 1: survey demographics: age band, income band, household size, female, college, white, diabetes, smoker, alcohol, and a survey-missing flag (mean-imputed as in \#7).
+\end{enumerate}
+\item \textbf{Weights:} non-negative, sum to one, least squares over the 150 nearest donors (distance on the same standardized predictors). With four blocks the fit is a compromise, so pre-RMSE on the outcome is larger than with outcome-only matching.
+\item \textbf{Effects:} gap = adopter minus synthetic, $e=-L,\dots,L$ ($e=0$ the adoption quarter); ATT$_e$ = mean over adopters; SE = cross-adopter SD$/\sqrt n$ (ignores weight estimation error). Post ATT = mean over $e=1,\dots,L$. Placebo: as many never-treated users as adopters get randomly drawn real adoption quarters and are run against the remaining donors.
+\item Code: \texttt{code/scripts/synth\_control\_balanced.py} (argument $L$) and \texttt{synth\_control\_balanced\_figs.py}.
 \end{itemize}
 
 \section{Results}
 \begin{table}[h]\centering\small
-\caption{Synthetic control, matching on own pre-history. Pre RMSE = adopter-vs-synthetic RMS gap in pre-period; second figure is the RMS outcome level.}
-\input{../code/analysis/outputs/synth_tab_own.tex}\end{table}
+\caption{Balanced synthetic control, $L=8$ (113 adopters). Pre RMSE = RMS adopter-minus-synthetic gap in the pre-period / RMS outcome level.}
+\input{../code/analysis/outputs/synth_bal_tab_L8.tex}\end{table}
 \begin{table}[h]\centering\small
-\caption{Synthetic control, matching on own pre-history and $\ln(1+n)$.}\label{tab:lnn}
-\input{../code/analysis/outputs/synth_tab_lnn.tex}\end{table}
-\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/synth_es_main_lnn.png}
-\caption{Event-study gaps, main outcomes, matching on own history and $\ln n$ (blue adopters, red placebo; 95\% CIs).}\label{fig:main}\end{figure}
-\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/synth_es_placebo_lnn.png}
-\caption{Same, placebo outcomes.}\label{fig:plac}\end{figure}
-
-With the own-only match, pre-fit RMSE is 0.001--0.015, an order of magnitude below the outcome level, which suggests interpolation (8 targets, 150 donors); the $\ln n$ match fits less tightly (RMSE 0.04--0.15) and is the more conservative specification (\texttt{synth\_es\_main\_own.png}, \texttt{synth\_es\_placebo\_own.png}).
+\caption{Balanced synthetic control, $L=6$ (242 adopters).}
+\input{../code/analysis/outputs/synth_bal_tab_L6.tex}\end{table}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/synth_bal_es_main_L6.png}
+\caption{Event-study gaps, main outcomes, $L=6$ (blue adopters, red pseudo-adopter placebo; 95\% CIs). $L=8$: \texttt{synth\_bal\_es\_main\_L8.png}.}\label{fig:main}\end{figure}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/synth_bal_es_placebo_L6.png}
+\caption{Same, placebo and general-intensity outcomes.}\label{fig:plac}\end{figure}
+\begin{table}[h]\centering\small
+\caption{Covariate balance, $L=8$, running-related fit: average adopter, synthetic twin and raw donor pool.}\label{tab:bal}
+\input{../code/analysis/outputs/synth_bal_tab_balance_L8.tex}\end{table}
 
 \section{Caveats and follow-ups}
 \begin{itemize}[nosep]
-\item Treated sample is the later adopters only (2020+), so not comparable to \#7's 447.
-\item Follow-ups (not done): hold-out pre-period fit to test overfitting; synthetic DiD / augmented SC with a unit fixed effect; pseudo-adopters selected on an $e=0$ purchase to test the selection explanation; not-yet-treated donors; HonestDiD on \#7.
+\item Balanced sample means long-lived, early-start users and adopters in a narrow calendar window (2020 for $L=8$), so results are not comparable to \#7's 447.
+\item Follow-ups (not done): hold-out pre-period fit; synthetic DiD / augmented SC; pseudo-adopters selected on an $e=0$ purchase; not-yet-treated donors; tuning predictor block weights.
 \end{itemize}
 \end{document}
