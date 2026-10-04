@@ -65,6 +65,7 @@ P["s_g_clean"] = P.uid.map(~w.g.notna() | (w.g_clean.notna() & ok("g_clean"))).a
 P["s_g_shoe"] = P.uid.map(~w.g_shoe.notna() | ok("g_shoe")).astype(int)
 P["adopter"] = P.uid.map(w.g.notna()).astype(int)       # for shoe-as-treatment robustness (drop wearable adopters)
 P["q"] = P.q.astype(str)
+P[["id","uid"]].drop_duplicates().to_csv(I + "design_id_map.csv", index=False)
 P.drop(columns="uid").to_csv(I + "design_panel_q.csv", index=False)
 print(P.shape, P.id.nunique())
 print({g_: int((ok(g_) & w[g_].notna()).sum()) for g_ in ["g", "g_clean", "g_shoe"]},

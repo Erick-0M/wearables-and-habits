@@ -79,6 +79,28 @@ Balanced panel: only users observed in every quarter from 2018Q1 to 2022Q4 (firs
 \item \textbf{Caveats.} The balanced sample selects long-lived heavy shoppers (about 3{,}100 of 5{,}000 users) and a short $\pm4$ quarter window; the post estimates are noisy (SEs of 0.01--0.02).
 \end{itemize}
 
+\section{Conditioning on baseline lifestyle (doubly-robust DiD)}
+\textbf{Approach.} Callaway--Sant'Anna with \texttt{est\_method="dr"} and baseline covariates, compared with the unconditional estimator on the \emph{same} samples (reference $t=-1$, never-treated controls). Lifestyle proxies come from each user's first 4 observed quarters (same rule for adopters and controls): log purchases, and 4 principal components (explaining 45\% of variance) of log purchases, log spend, category shares (running, fitness, supplements, medication, pet, books, gift cards, cables, cleaning, grocery) and any-running/any-fitness indicators; plus survey age, income, household size, sex, college, white, diabetes, smoking, drinking and a survey-missing indicator (missing values mean-imputed; all 5{,}026 users matched). Scripts: \texttt{prep\_design\_covariates.py}, \texttt{design\_did\_lifestyle.R}.
+\begin{itemize}[nosep]
+\item \textbf{Balanced panel:} as in the previous section (457 adopters, 2{,}392 controls; $e\in[-4,4]$; post = quarters 1--4).
+\item \textbf{Unbalanced panel:} adopters need $\geq$6 quarters of pre-history so the baseline window precedes adoption (476 adopters, 4{,}086 controls; $e\in[-8,8]$; post = quarters 1--8). This drops about 94 adopters relative to the earlier unbalanced runs.
+\item \textbf{Overlap is adequate:} the estimated adoption propensity averages 0.20 for adopters and 0.15 for balanced-panel controls (0.16 vs 0.10 unbalanced); the 99th percentile of control propensities is 0.39 and no adopter exceeds 0.9.
+\item \textbf{``Pre gap''} is the mean of the estimated pre-period coefficients ($e<-1$, relative to $t=-1$); it is the diagnostic that matters. A control for lifestyle works if placebo pre gaps move toward zero.
+\end{itemize}
+\begin{center}\small Balanced panel, all adopters\\[2pt]\input{../code/analysis/outputs/design_tab_lifestyle_main_all_balanced.tex}\end{center}
+\begin{center}\small Unbalanced panel (adopters with $\geq$6 quarters pre), all adopters\\[2pt]\input{../code/analysis/outputs/design_tab_lifestyle_main_all_unbalanced.tex}\end{center}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_lifestyle_balanced.png}
+\caption{Balanced panel: unconditional (blue) vs.\ DR with lifestyle covariates (red).}\label{fig:life}\end{figure}
+\begin{figure}[h]\centering\includegraphics[width=\textwidth]{../code/analysis/outputs/design_es_lifestyle_unbalanced.png}
+\caption{Unbalanced panel: unconditional vs.\ DR with lifestyle covariates.}\label{fig:lifeu}\end{figure}
+\textbf{Findings.}
+\begin{itemize}[nosep]
+\item \textbf{Baseline lifestyle does not remove the pre-trend.} In the balanced panel the running-related pre gap is $-0.092$ unconditional vs.\ $-0.093$ with covariates, the pet placebo $-0.047$ vs.\ $-0.049$, books $-0.022$ vs.\ $-0.026$; the post ATTs are essentially unchanged (running-related $-0.035$ (0.019), supplements $+0.028$ (0.019), running shoe $-0.025$ (0.012)). In the unbalanced panel the gaps are similar or slightly larger in absolute value (running-related $-0.082\to-0.074$, pet $-0.060\to-0.099$), with larger standard errors.
+\item \textbf{By the criterion stated above, the control fails:} placebo pre-trends do not flatten, so the post estimates should not be read as causal effects of the device. The covariates do shift the general-intensity outcomes (balanced $\ln(1+n)$ post $0.001\to0.041$, unbalanced $-0.146\to-0.055$), but those also have a steeper pre gap, so this mostly moves the level of the comparison, not the trend.
+\item \textbf{Interpretation.} Whatever drives the ramp is not captured by baseline (first-year) purchase mix or survey demographics. It is more likely a time-varying factor that evolves just before adoption (life events, an emerging fitness routine, hypotheses 3--4), so a time-invariant baseline adjustment cannot absorb it.
+\item \textbf{Clean sample:} same pattern (tables \texttt{design\_tab\_lifestyle\_main\_clean\_*.tex}).
+\end{itemize}
+
 \section{Pitfalls and follow-ups}
 \begin{itemize}[nosep]
 \item Pre-trends (and placebo pre-trends) mean the plain unconditional DiD is not credible; follow-ups: covariates/doubly-robust, not-yet-treated controls, HonestDiD bounds, matching on pre-adoption purchasing intensity (not run here).
