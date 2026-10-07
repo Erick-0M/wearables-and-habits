@@ -39,3 +39,9 @@ Append one section per issue below. Don't rewrite or delete prior entries. Keep 
 - Pre-trend survives a balanced panel (users observed 2018Q1-2022Q4) and doubly-robust conditioning on baseline lifestyle (first-4-quarter purchase-mix PCs + survey demographics; overlap fine). So the confounder is time-varying and pre-adoption (life events, emerging fitness routine), not a fixed baseline trait or attrition. Next: time-varying purchasing-intensity control/shares, not-yet-treated controls, HonestDiD.
 - Bundling is thin: only 30 of 570 adopters (24 of 447 clean) buy running shoes within +-1 month of the device; underpowered, only fitness gear differs (-0.144, SE 0.072). Running-shoe-as-treatment: no later wearable purchase, +0.029 (0.014) non-shoe running-related.
 - Pitfalls: `did` joint pre-test Wald is 0.000/n/a (singular), rely on plots; `\text` needs amsmath (not loaded), escape `#` in table labels; conditional DR run takes ~10+ min (run in background).
+
+## Issue #9 — Synthetic control (2026-10-07)
+- Deliverable: `reports/synthetic_control_open_ecommerce_report.tex/.pdf`; scripts `code/scripts/synth_control*.py` (plain, balanced, perm, aug, figs). Balanced panel, never-treated donors, L=8 (113 adopters) / L=6 (242); match on outcome path, ln n path, category mix, demographics.
+- Result: running-related post ATT about +0.03 to +0.05 (augmented L=8 +0.036, perm p=0.013), supplements +0.04 to +0.07, running shoe ~+0.01; but books and ln(1+n) (+0.17 to +0.22) also rise, so not running-specific. Sign disagrees with #7 DiD (small negative).
+- Quirks: plain SC misses the e=-1 purchasing ramp (adopters outside donor range); augmented (ridge) SC fixes it, but flat pre-gaps are partly mechanical. SEs are plain cross-adopter (no bootstrap); use the permutation p-values.
+- Likely driver (untested): adopters are selected on an e=0 purchase and >=12m later activity, which donors are not. Follow-ups: selection-matched pseudo-adopters, SDID, holdout fit.
